@@ -12494,7 +12494,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ASMWLL00NKM0E"
+		(property "Footprint" "SamacSys_Parts:ASMWLL00NKM0E"
 			(at 214.63 171.78 0)
 			(effects
 				(font
@@ -13229,7 +13229,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ASMWLL00NKM0E"
+		(property "Footprint" "SamacSys_Parts:ASMWL300AFH0E"
 			(at 234.95 147.65 0)
 			(effects
 				(font
@@ -13901,7 +13901,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "ASMWLL00NKM0E"
+		(property "Footprint" "SamacSys_Parts:ASMWL300AFH0E"
 			(at 194.31 147.65 0)
 			(effects
 				(font
@@ -14453,7 +14453,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ASMWLL00NKM0E"
+		(property "Footprint" "SamacSys_Parts:ASMWL300AFH0E"
 			(at 276.86 147.65 0)
 			(effects
 				(font
@@ -14639,7 +14639,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ASMWLL00NKM0E"
+		(property "Footprint" "SamacSys_Parts:ASMWL300AFH0E"
 			(at 255.27 147.65 0)
 			(effects
 				(font
@@ -15167,7 +15167,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ASMWLL00NKM0E"
+		(property "Footprint" "SamacSys_Parts:ASMWL300AFH0E"
 			(at 213.36 147.65 0)
 			(effects
 				(font
@@ -16243,7 +16243,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ASMWLL00NKM0E"
+		(property "Footprint" "SamacSys_Parts:ASMWLL00NKM0E"
 			(at 257.81 171.78 0)
 			(effects
 				(font
@@ -19848,7 +19848,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ASMWLL00NKM0E"
+		(property "Footprint" "SamacSys_Parts:ASMWLL00NKM0E"
 			(at 279.4 171.78 0)
 			(effects
 				(font
@@ -20383,7 +20383,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SOD3716X145N"
+		(property "Footprint" "SamacSys_Parts:SOD3716X145N"
 			(at 176.53 36.83 0)
 			(effects
 				(font
@@ -22136,7 +22136,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ASMWLL00NKM0E"
+		(property "Footprint" "SamacSys_Parts:ASMWLL00NKM0E"
 			(at 194.31 171.78 0)
 			(effects
 				(font
@@ -22388,7 +22388,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DIOM7959X262N"
+		(property "Footprint" "SamacSys_Parts:DIOM7959X262N"
 			(at 74.93 81.28 0)
 			(effects
 				(font
@@ -24089,7 +24089,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ASMWLL00NKM0E"
+		(property "Footprint" "SamacSys_Parts:ASMWLL00NKM0E"
 			(at 236.22 171.78 0)
 			(effects
 				(font

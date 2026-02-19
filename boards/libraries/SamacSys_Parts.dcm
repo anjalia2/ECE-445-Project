@@ -48,4 +48,28 @@ K
 F https://ds.yuden.co.jp/TYCOMPAS/or/specSheet?pn=MSASG21GSB7105KTNA01
 $ENDCMP
 #
+$CMP BZT52C12-13-F
+D Diodes Inc BZT52C12-13-F Zener Diode, 12V 5% 500 mW SMT 2-Pin SOD-123
+K
+F https://www.diodes.com//assets/Datasheets/ds18004.pdf
+$ENDCMP
+#
+$CMP SK84LQ-TP
+D SCHOTTKY BARRIER RECTIFIERS 40V 8A,SMC
+K
+F https://mccsemi.com/pdf/Products/SK84LQ_SK86LQ(SMC).pdf
+$ENDCMP
+#
+$CMP ASMW-L300-AFH0E
+D High Power LEDs - Single Color Horticulture 0.5W 2835 Surface Mount LED
+K
+F https://www.mouser.co.il/datasheet/2/678/Broadcom_01_02_2020_ASMW_LD00_AGJ0E_ASMW_L300_AFH0-1892072.pdf
+$ENDCMP
+#
+$CMP ASMW-LL00-NKM0E
+D High Power LEDs - Single Colour Horticulture 0.5W 2835 Surface Mount LED
+K
+F https://www.mouser.de/datasheet/2/678/Broadcom_01_02_2020_ASMW_LD00_AGJ0E_ASMW_L300_AFH0-1892072.pdf
+$ENDCMP
+#
 #End Doc Library
