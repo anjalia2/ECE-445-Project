@@ -1,0 +1,51 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP RQ5E030AJTCL
+D Nch 30V 3A Middle Power MOSFET
+K
+F https://fscdn.rohm.com/en/products/databook/datasheet/discrete/transistor/mosfet/rq5e030ajtcl-e.pdf
+$ENDCMP
+#
+$CMP SF-2410FP1000W-2
+D BOURNS - SF-2410FP1000W-2 - FUSE, SMD, 10A, FAST ACTING, 2410
+K
+F https://componentsearchengine.com/Datasheets/1/SF-2410FP1000W-2.pdf
+$ENDCMP
+#
+$CMP SS24
+D TAIWAN SEMICONDUCTOR - SS24 - SCHOTTKY RECTIFIER, 2A, 40V, DO-214AA
+K
+F https://www.onsemi.com/pub/Collateral/SS24-D.PDF
+$ENDCMP
+#
+$CMP EEV107M035A9HAA
+D EEV, Aluminum, Aluminum Electrolytic, 100 uF, 20%, 35 VDC, -55/+105C, 105C, -55C, 105C, 2,000 Hrs, 12 % , 340 mOhms, 0.196, 35 uA, 2, 3, 6.3mm, 7.7mm, 1000
+K
+F https://content.kemet.com/datasheets/KEM_A4002_EEV.pdf
+$ENDCMP
+#
+$CMP 694108301002
+D WR-DCPJ_THT_R/A_Plastic DCPowerJack_THT_R/A_Plastic_CenterPin_ 2.5
+K
+F https://www.we-online.com/components/products/download/3D_694108301002+%28rev1%29.pdf
+$ENDCMP
+#
+$CMP GMK107B7104KAHT
+D Multilayer Ceramic Capacitors MLCC - SMD/SMT 0603 35VDC 0.1uF 10% X7R AEC-Q200
+K
+F https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-DGA20/25674.pdf
+$ENDCMP
+#
+$CMP GMK212B7105KG-T
+D Ceramic capacitor 0805 X7R 35V 1uF Taiyo Yuden 0805, 2012 M 1uF Ceramic Multilayer Capacitor, 35 V dc, +125C, X7R Dielectric, +/-10% SMD
+K
+F https://ds.yuden.co.jp/TYCOMPAS/or/specSheet?pn=MSASG21GSB7105KTNA01
+$ENDCMP
+#
+#End Doc Library
