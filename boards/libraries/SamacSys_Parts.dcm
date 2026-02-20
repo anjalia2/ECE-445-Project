@@ -72,4 +72,82 @@ K
 F https://www.mouser.de/datasheet/2/678/Broadcom_01_02_2020_ASMW_LD00_AGJ0E_ASMW_L300_AFH0-1892072.pdf
 $ENDCMP
 #
+$CMP 50YXJ47M6.3X11
+D Type Description Select All Category Capacitors Aluminum Electrolytic Capacitors Mfr Rubycon Series YXJ Packaging Bulk Part Status Active Capacitance 47 F Tolerance +/-20% Voltage - Rated 50 V ESR (Equivalent Series Resistance) - Lifetime @ Temp. 7000 Hrs @ 105C Operating Temperature -40C ~ 105C Polarization Polar Ratings - Applications General Purpose Ripple Current @ Low Frequency 162.25 mA @ 120 Hz Ripple Current @ High Frequency 295 mA @ 100 kHz Impedance 300 mOhms
+K
+F https://www.mouser.co.uk/datasheet/2/977/e_YXJ-1601195.pdf
+$ENDCMP
+#
+$CMP TMK316BJ106KL-T
+D Taiyo Yuden 10uF Multilayer Ceramic Capacitor MLCC, 25V dc V, +/-10% , SMD
+K
+F https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Taiyo-Yuden-TMK316BJ106KL-T_C87161.pdf
+$ENDCMP
+#
+$CMP TMK316BBJ226ML-T
+D Capacitor MLCC 1206 X5R 25V 22uF Taiyo Yuden 22uF Multilayer Ceramic Capacitor (MLCC) 25 V dc +/-20% X5R dielectric M Solder max op. temp. +85C
+K
+F https://ds.yuden.co.jp/TYCOMPAS/or/specSheet?pn=MSAST31LBB5226MTNA01
+$ENDCMP
+#
+$CMP 35ZLH220MEFCT78X11.5
+D 220 F 35 V Aluminum Electrolytic Capacitors Radial, Can 8000 Hrs @ 105C
+K
+F https://www.digikey.ph/en/products/detail/rubycon/35ZLH220MEFCT78X11-5/3568150
+$ENDCMP
+#
+$CMP 35PX470MEFC10X12.5
+D RUBYCON - 35PX470MEFC10X12.5 - CAP, ALU ELEC, 470UF, 35V, RAD
+K
+F https://componentsearchengine.com/Datasheets/2/35PX470MEFC10X12.5.pdf
+$ENDCMP
+#
+$CMP GRM155R61H474KE11D
+D Multilayer Ceramic Capacitors MLCC - SMD/SMT
+K
+F https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61H474KE11-01A.pdf
+$ENDCMP
+#
+$CMP TMK107ABJ225KA-T
+D Taiyo Yuden 0603 (1608M) 2.2uF Multilayer Ceramic Capacitor MLCC 25V dc +/-10% SMD TMK107ABJ225KA-T
+K
+F https://componentsearchengine.com/Datasheets/5/TMK107ABJ225KA-T.pdf
+$ENDCMP
+#
+$CMP C0603C103K5RACTU
+D SMD Comm X7R, Ceramic, 0.01 uF, 10%, 50 VDC, 125 VDC, 125C, -55C, X7R, SMD, MLCC, Temperature Stable, Class II, 2.5 % , 10 GOhms, 4.8 mg, 0603, 1.6mm, 0.8mm, 0.8mm, 0.7mm, 0.35mm, 4000, 78  Weeks, 80
+K
+F https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf
+$ENDCMP
+#
+$CMP GRM155R71H102KA01D
+D MURATA - GRM155R71H102KA01D - CAP, MLCC, X7R, 1NF, 50V, 0402
+K
+F https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71H102KA01-01A.pdf
+$ENDCMP
+#
+$CMP 282837-2
+D Body Features: Product Orientation Vertical | Primary Product Color Green | Configuration Features: Wire Entry Location Side | Stacking Configuration Side Stackable | Number of Rows 1 | Stacked Levels Without | Number of Positions 2 | Wire Entry Angle 90 | Contact Features: Contact Current Rating (Max) 13.5 AMP | Contact Mating Area Plating Material Tin | Contact Base Material Brass | Dimensions: Wire Size 30  16 AWG | Wire Size .05  1.3 MMSQ | Electrical Characteristics: Operating Voltage 300 VAC |
+K
+F https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1-1773458-1_EURO_STYLE_QRG&DocType=Data%20Sheet&DocLang=English&PartCntxt=282837-2&DocFormat=pdf
+$ENDCMP
+#
+$CMP 691137710003
+D WR-TBL Terminal block - Wire protector - THT MRT12P5/3VE Serie 1377 - 5,0mm pitch - Monoblock THT - Green - Horizontal cable entry Wire Protector 11.5mm height - 03p
+K
+F https://www.we-online.com/components/products/download/691137710003+%28rev1%29.pdf
+$ENDCMP
+#
+$CMP SRN6045-4R7Y
+D Power Inductor semi-shielded SMD 4.7uH Bourns SRN6045 Series Shielded Wire-wound SMD Inductor with a Ferrite Core, 4.7 uH +/-30% 4A Idc
+K
+F https://www.bourns.com/data/global/pdfs/SRN6045.pdf
+$ENDCMP
+#
+$CMP NRS5030T3R3MMGJ
+D Fixed Inductors INDCTR LW PROFL WND 3.3uH +/- 20% TOL
+K
+F https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-DGA11/2227925.pdf
+$ENDCMP
+#
 #End Doc Library

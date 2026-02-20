@@ -11017,7 +11017,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:CAPC3216X180N"
 			(at 138.7348 260.35 0)
 			(effects
 				(font
@@ -11219,7 +11219,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPAE630X800N"
+		(property "Footprint" "SamacSys_Parts:CAPC1608X90N"
 			(at 298.1452 199.39 0)
 			(effects
 				(font
@@ -11355,7 +11355,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:691137710003"
 			(at 77.47 154.94 0)
 			(effects
 				(font
@@ -12092,7 +12092,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPAE630X800N"
+		(property "Footprint" "SamacSys_Parts:CAPC1608X90N"
 			(at 105.1052 41.91 0)
 			(effects
 				(font
@@ -12426,7 +12426,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPAE630X800N"
+		(property "Footprint" "SamacSys_Parts:CAPC1608X90N"
 			(at 92.4052 171.45 0)
 			(effects
 				(font
@@ -12684,7 +12684,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D5.0mm"
 			(at 316.23 123.19 0)
 			(effects
 				(font
@@ -12960,7 +12960,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:CAPAE630X800N"
 			(at 83.5152 88.9 0)
 			(effects
 				(font
@@ -13029,7 +13029,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPAE630X800N"
+		(property "Footprint" "SamacSys_Parts:CAPC1608X90N"
 			(at 140.6652 147.32 0)
 			(effects
 				(font
@@ -13609,7 +13609,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D5.0mm"
 			(at 316.23 100.33 0)
 			(effects
 				(font
@@ -13686,7 +13686,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D5.0mm"
 			(at 316.23 110.49 0)
 			(effects
 				(font
@@ -13765,7 +13765,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPAE630X800N"
+		(property "Footprint" "SamacSys_Parts:CAPC1608X90N"
 			(at 93.6752 116.84 0)
 			(effects
 				(font
@@ -14087,7 +14087,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical"
 			(at 335.28 199.39 0)
 			(effects
 				(font
@@ -14319,7 +14319,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:0805_AVX"
 			(at 73.66 217.4748 0)
 			(effects
 				(font
@@ -14761,7 +14761,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:GRM15x"
 			(at 145.0848 210.82 0)
 			(effects
 				(font
@@ -14962,7 +14962,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:CAPC1005X70N"
 			(at 96.52 261.3152 0)
 			(effects
 				(font
@@ -15032,7 +15032,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:CAPC1608X90N"
 			(at 59.3852 254 0)
 			(effects
 				(font
@@ -15426,7 +15426,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:2828372"
 			(at 167.64 139.7 0)
 			(effects
 				(font
@@ -15564,7 +15564,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPAE630X800N"
+		(property "Footprint" "SamacSys_Parts:CAPC1608X90N"
 			(at 92.4052 147.32 0)
 			(effects
 				(font
@@ -16038,7 +16038,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:CAPPRD350W60D825H1300"
 			(at 126.6952 147.32 0)
 			(effects
 				(font
@@ -16431,7 +16431,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:C0603"
 			(at 122.2248 264.16 0)
 			(effects
 				(font
@@ -16569,7 +16569,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 312.42 194.31 0)
 			(effects
 				(font
@@ -17046,7 +17046,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:691137710003"
 			(at 77.47 172.72 0)
 			(effects
 				(font
@@ -17119,7 +17119,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:CAPC3216X190N"
 			(at 93.6752 41.91 0)
 			(effects
 				(font
@@ -17188,7 +17188,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:CAPPRD350W60D825H1300"
 			(at 68.2752 41.91 0)
 			(effects
 				(font
@@ -17591,7 +17591,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:CAPPRD250W50D655H1250"
 			(at 21.2852 34.29 0)
 			(effects
 				(font
@@ -17790,7 +17790,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 339.09 163.83 0)
 			(effects
 				(font
@@ -17997,7 +17997,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:CAPPRD500W60D1025H1400"
 			(at 138.1252 113.03 0)
 			(effects
 				(font
@@ -19340,7 +19340,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:CAPPRD250W50D655H1250"
 			(at 31.4452 231.14 0)
 			(effects
 				(font
@@ -19408,7 +19408,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:SRN6045_1"
 			(at 54.61 218.44 0)
 			(effects
 				(font
@@ -19710,7 +19710,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:CAPC3216X180N"
 			(at 42.2148 223.52 0)
 			(effects
 				(font
@@ -19780,7 +19780,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPAE630X800N"
+		(property "Footprint" "SamacSys_Parts:CAPC1608X90N"
 			(at 56.8452 34.29 0)
 			(effects
 				(font
@@ -19969,7 +19969,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPAE630X800N"
+		(property "Footprint" "SamacSys_Parts:CAPC1608X90N"
 			(at 125.4252 113.03 0)
 			(effects
 				(font
@@ -20039,7 +20039,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:691137710003"
 			(at 77.47 113.03 0)
 			(effects
 				(font
@@ -20245,7 +20245,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:691137710003"
 			(at 173.99 110.49 0)
 			(effects
 				(font
@@ -20788,7 +20788,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:GRM15x"
 			(at 133.35 193.3448 0)
 			(effects
 				(font
@@ -21598,7 +21598,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:CAPC3216X180N"
 			(at 33.9852 34.29 0)
 			(effects
 				(font
@@ -22524,7 +22524,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:CAPC3216X180N"
 			(at 45.4152 34.29 0)
 			(effects
 				(font
@@ -22594,7 +22594,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:CAPC2012X135N"
 			(at 105.1052 147.32 0)
 			(effects
 				(font
@@ -22934,7 +22934,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPAE630X800N"
+		(property "Footprint" "SamacSys_Parts:CAPC1608X90N"
 			(at 106.3752 88.9 0)
 			(effects
 				(font
@@ -23070,7 +23070,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:CAPC3216X190N"
 			(at 82.2452 41.91 0)
 			(effects
 				(font
@@ -23766,7 +23766,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPAE630X800N"
+		(property "Footprint" "SamacSys_Parts:CAPC1608X90N"
 			(at 82.2452 133.35 0)
 			(effects
 				(font
@@ -24478,7 +24478,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMF"
+		(property "Footprint" "SamacSys_Parts:TVS_SMF12A"
 			(at 62.23 85.09 0)
 			(effects
 				(font
@@ -24681,7 +24681,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:INDC4949X330N"
 			(at 121.92 31.75 0)
 			(effects
 				(font
@@ -24814,7 +24814,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPAE630X800N"
+		(property "Footprint" "SamacSys_Parts:CAPC1608X90N"
 			(at 302.26 170.4848 0)
 			(effects
 				(font
@@ -25088,7 +25088,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:CAPC3216X190N"
 			(at 286.7152 199.39 0)
 			(effects
 				(font
