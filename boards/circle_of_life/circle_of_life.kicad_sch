@@ -11426,7 +11426,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:RESC1608X55N"
 			(at 332.74 124.968 90)
 			(effects
 				(font
@@ -11757,7 +11757,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:RESC1608X55N"
 			(at 161.29 114.808 90)
 			(effects
 				(font
@@ -12616,7 +12616,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:RESC2012X60N"
 			(at 163.068 36.83 90)
 			(effects
 				(font
@@ -13541,7 +13541,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:RESC1608X55N"
 			(at 59.182 120.65 90)
 			(effects
 				(font
@@ -14251,7 +14251,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:RESC1608X55N"
 			(at 331.47 98.552 90)
 			(effects
 				(font
@@ -15289,7 +15289,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:RESC2012X60N"
 			(at 68.072 237.49 90)
 			(effects
 				(font
@@ -15356,7 +15356,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:RESC1608X55N"
 			(at 312.42 161.798 90)
 			(effects
 				(font
@@ -15494,7 +15494,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:RESC1608X55N"
 			(at 331.47 112.268 90)
 			(effects
 				(font
@@ -15634,7 +15634,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 163.068 26.67 90)
 			(effects
 				(font
@@ -15836,7 +15836,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:RESC1608X55N"
 			(at 114.3 274.828 90)
 			(effects
 				(font
@@ -16501,7 +16501,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:RESC2012X60N"
 			(at 68.072 247.65 90)
 			(effects
 				(font
@@ -17258,7 +17258,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:RESC3116X65N"
 			(at 68.072 228.6 90)
 			(effects
 				(font
@@ -18464,7 +18464,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:RESC1608X55N"
 			(at 139.192 237.49 90)
 			(effects
 				(font
@@ -18870,7 +18870,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:RESC1608X55N"
 			(at 151.892 234.95 90)
 			(effects
 				(font
@@ -18940,7 +18940,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:RESC1608X55N"
 			(at 144.018 161.29 90)
 			(effects
 				(font
@@ -20453,7 +20453,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:RESC1608X55N"
 			(at 50.292 171.45 90)
 			(effects
 				(font
@@ -20654,7 +20654,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:RESC1608X55N"
 			(at 107.95 262.128 90)
 			(effects
 				(font
@@ -21256,7 +21256,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:RESC1608X55N"
 			(at 59.182 130.81 90)
 			(effects
 				(font
@@ -21462,7 +21462,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:RESC2012X60N"
 			(at 170.688 36.83 90)
 			(effects
 				(font
@@ -21800,7 +21800,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:RESC1608X55N"
 			(at 64.008 152.4 90)
 			(effects
 				(font
@@ -21870,7 +21870,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:RESC2012X60N"
 			(at 113.792 36.83 90)
 			(effects
 				(font
@@ -23140,7 +23140,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:RESC2012X60N"
 			(at 113.792 46.99 90)
 			(effects
 				(font
@@ -23274,7 +23274,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:RESC1608X55N"
 			(at 72.39 127.508 90)
 			(effects
 				(font
@@ -24341,7 +24341,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:RESC1608X55N"
 			(at 149.86 157.988 90)
 			(effects
 				(font
@@ -24545,7 +24545,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:RESC1608X55N"
 			(at 323.088 153.67 90)
 			(effects
 				(font
@@ -24613,7 +24613,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:RESC1608X55N"
 			(at 102.87 274.828 90)
 			(effects
 				(font
@@ -24952,7 +24952,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:RESC1608X55N"
 			(at 133.35 262.128 90)
 			(effects
 				(font

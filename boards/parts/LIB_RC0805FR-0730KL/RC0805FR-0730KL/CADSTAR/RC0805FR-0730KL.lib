@@ -1,0 +1,16 @@
+.RC0805FR-0730KL :1 ;YAGEO - RC0805FR-0730KL - SMD Chip Resistor, 30 kohm, +/- 1%, 125 mW, 0805 [2012 Metric], Thick Film, General Purpose
+RESC2012X60N
+*STM R
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN RC0805FR-0730KL
+~!Mouser Part Number (603-RC0805FR-0730KL)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/YAGEO/RC0805FR-0730KL?qs=QrWOOBGzeCbwE5CbPpR7Pw%3D%3D)
+~!Manufacturer_Name (YAGEO)
+~!Manufacturer_Part_Number (RC0805FR-0730KL)
+~!Link Datasheet (https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf)
+~!Height (0.6mm)
+~!3D_Model (RC0805FR-0730KL)
+RC0805FR-0730KL
+1.1!U 2.1!U 

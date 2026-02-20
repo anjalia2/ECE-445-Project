@@ -1,0 +1,9 @@
+Manufacturer=YAGEO
+PartNumber=RC0805FR-0730KL
+PartCategory=Resistor
+PackageCategory=Resistor Chip
+PinCount=2
+Version=2.1
+Released=2022-08-10 06:05:27
+Downloaded=2026-02-20 01:32:12
+3D=Y

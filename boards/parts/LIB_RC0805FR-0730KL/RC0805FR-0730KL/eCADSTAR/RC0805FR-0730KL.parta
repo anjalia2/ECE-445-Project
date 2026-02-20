@@ -1,0 +1,66 @@
+(Japanese_coding: sjis)
+(function "ECS_16485655"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2022-08-10-06:05:27)
+    (utime 2026-02-04-14:20:06)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "RC0805FR-0730KL")
+)
+
+
+(pinAssign "ECS_16485655"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2022-08-10-06:05:27)
+    (utime 2026-02-04-14:20:06)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_16485655")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "RC0805FR-0730KL")
+)
+
+
+(part "RC0805FR-0730KL"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2022-08-10-06:05:27)
+    (utime 2026-02-04-14:20:06)
+    (packageRef "RC0805FR-0730KL")
+    (pinAssignRef "ECS_16485655")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "R")
+    (property "description" "YAGEO - RC0805FR-0730KL - SMD Chip Resistor, 30 kohm, +/- 1%, 125 mW, 0805 [2012 Metric], Thick Film, General Purpose")
+    (property "Mouser_Part_Number" "603-RC0805FR-0730KL")
+    (property "Mouser_Price/Stock" "https://www.mouser.co.uk/ProductDetail/YAGEO/RC0805FR-0730KL?qs=QrWOOBGzeCbwE5CbPpR7Pw%3D%3D")
+    (property "Manufacturer_Name" "YAGEO")
+    (property "Manufacturer_Part_Number" "RC0805FR-0730KL")
+    (property "Datasheet_Link" "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf")
+    (property "compAreaTopHeight" 0.6)
+)
+
+

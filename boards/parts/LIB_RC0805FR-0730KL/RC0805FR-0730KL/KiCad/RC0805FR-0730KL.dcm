@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP RC0805FR-0730KL
+D YAGEO - RC0805FR-0730KL - SMD Chip Resistor, 30 kohm, +/- 1%, 125 mW, 0805 [2012 Metric], Thick Film, General Purpose
+K
+F https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf
+$ENDCMP
+#
+#End Doc Library
