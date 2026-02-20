@@ -168,4 +168,46 @@ K
 F https://componentsearchengine.com/Datasheets/1/RC1206FR-071M1L.pdf
 $ENDCMP
 #
+$CMP ESP32-WROOM-32E-N8R2
+D Multiprotocol Modules ESP32-WROOM-32E integrates ESP32-D0WD-V3, with higher stability and safety performance.
+K
+F https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+$ENDCMP
+#
+$CMP TC1262-3.3VDB
+D TC1262-3.3VDB, Low Dropout Voltage Regulator, 0.5A, 3.3 V +/-0.5%, 2.7  6 Vin, 3-Pin SOT-223
+K
+F http://ww1.microchip.com/downloads/en/DeviceDoc/21373C.pdf
+$ENDCMP
+#
+$CMP TPS565242DRLR
+D Switching Voltage Regulators 3-V to 16-V input voltage, 5-A ECO mode, synchronous buck converter in SOT-563 package
+K
+F https://www.ti.com/lit/gpn/tps565247
+$ENDCMP
+#
+$CMP LT3922EUFD#PBF
+D LINEAR TECHNOLOGY - LT3922EUFD#PBF - LED DRIVER, MULTI-TOPOLOGY, QFN-28
+K
+F https://componentsearchengine.com/Datasheets/1/LT3922EUFD#PBF.pdf
+$ENDCMP
+#
+$CMP SI2319CDS-T1-GE3
+D MOSFET P-Ch 40V 3.1A TrenchFET SOT23 Vishay SI2319CDS-T1-GE3 P-channel MOSFET Transistor, 4.4 A, -40 V, 3-Pin SOT-23
+K
+F 
+$ENDCMP
+#
+$CMP CSR1206FTR500
+D RES CS, 1206, 0.5 ohm, 1%, 0.5W
+K
+F https://cs.seielect.com/catalog/SEI-CSR_CSRN.pdf
+$ENDCMP
+#
+$CMP TXU0101DBVR
+D Translation - Voltage Levels Single channel fixed-direction level shifter
+K
+F https://www.ti.com/lit/ds/symlink/txu0101.pdf?ts=1669130963626&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTXU0101
+$ENDCMP
+#
 #End Doc Library
