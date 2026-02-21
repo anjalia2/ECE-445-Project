@@ -210,4 +210,28 @@ K
 F https://www.ti.com/lit/ds/symlink/txu0101.pdf?ts=1669130963626&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTXU0101
 $ENDCMP
 #
+$CMP CP2102C-A01-GQFN28
+D USB Interface IC Single Chip - USB to UART Bridge QFN28 -40 to +85 C
+K
+F https://www.silabs.com/documents/public/data-sheets/cp2102c-datasheet.pdf
+$ENDCMP
+#
+$CMP SP0503BAHTG
+D ESD Suppressors / TVS Diodes TVS AVAL DIODE SMT
+K
+F 
+$ENDCMP
+#
+$CMP SP0506BAATG
+D TVS Diode Arrays
+K
+F https://www.littelfuse.com/~/media/electronics/datasheets/tvs_diode_arrays/littelfuse_tvs_diode_array_sp05_datasheet.pdf.pdf
+$ENDCMP
+#
+$CMP SS8050-G
+D Bipolar Transistors - BJT NPN TRANSISTOR 1.5A 40V
+K
+F https://datasheet.datasheetarchive.com/originals/distributors/DKDS-12/229454.pdf
+$ENDCMP
+#
 #End Doc Library
