@@ -1,4 +1,4 @@
-27159143128937967
+27164458432230024
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -98420,6 +98420,20 @@ Schottky Diode
 2
 2
 SamacSys_Parts
+DPY_R-PX1SON-N2_
+DPY (R-PX1SON-N2)
+Diode
+0
+2
+2
+SamacSys_Parts
+ESP32S3WROOM1N8R2
+ESP32-S3-WROOM-1-N8R2-3
+Integrated Circuit
+0
+49
+49
+SamacSys_Parts
 ESP32WROOM32EN8R2
 ESP32-WROOM-32E-N8R2-2
 Integrated Circuit
@@ -98566,6 +98580,13 @@ TVS_SMF12A
 0
 2
 2
+SamacSys_Parts
+UJ20CHGMSMTR4CP16TR
+UJ20-C-H-G-MSMT-R-4C-P16-TR-3
+Connector
+0
+16
+16
 SamacSys_Parts
 Untitled
 
