@@ -13348,7 +13348,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPC3216X180N"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 129.8448 261.62 0)
 			(effects
 				(font
@@ -13550,7 +13550,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPC1608X90N"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 387.0452 129.54 0)
 			(effects
 				(font
@@ -14646,7 +14646,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPC1608X90N"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 105.1052 41.91 0)
 			(effects
 				(font
@@ -14762,10 +14762,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "5b85a2eb-be13-4a39-81bd-899712245dd6")
+			(uuid "5b85a2eb-be13-4a39-81bd-899712245dd7")
 		)
 		(pin "1"
-			(uuid "dc51a8a0-8986-4fde-a81e-4be69d57a829")
+			(uuid "dc51a8a0-8986-4fde-a81e-4be69d57a82a")
 		)
 		(instances
 			(project ""
@@ -15337,7 +15337,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPC1608X90N"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 93.6752 171.45 0)
 			(effects
 				(font
@@ -16168,7 +16168,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPC1608X90N"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 141.9352 154.94 0)
 			(effects
 				(font
@@ -16746,7 +16746,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPC2012X135N"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 86.0552 88.9 0)
 			(effects
 				(font
@@ -17106,7 +17106,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPC1608X90N"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 93.6752 121.92 0)
 			(effects
 				(font
@@ -18603,7 +18603,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPC1005X70N"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 87.63 262.5852 0)
 			(effects
 				(font
@@ -19271,7 +19271,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPC1608X90N"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 93.6752 147.32 0)
 			(effects
 				(font
@@ -20086,7 +20086,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPC2012X135N"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 172.4152 83.82 0)
 			(effects
 				(font
@@ -21285,10 +21285,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "af308f51-8ed7-4b0f-90a2-0ac67ac806e4")
+			(uuid "af308f51-8ed7-4b0f-90a2-0ac67ac806e5")
 		)
 		(pin "2"
-			(uuid "c4d6932c-2986-4d54-a357-7636e530ff92")
+			(uuid "c4d6932c-2986-4d54-a357-7636e530ff93")
 		)
 		(instances
 			(project ""
@@ -23210,7 +23210,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPC2012X135N"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 400.3548 91.44 0)
 			(effects
 				(font
@@ -24214,7 +24214,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 263.8552 111.76 0)
 			(effects
 				(font
@@ -24855,7 +24855,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPC1608X90N"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 56.8452 34.29 0)
 			(effects
 				(font
@@ -25044,7 +25044,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPC1608X90N"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 125.4252 113.03 0)
 			(effects
 				(font
@@ -26306,7 +26306,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPC2012X135N"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 106.3752 121.92 0)
 			(effects
 				(font
@@ -26634,7 +26634,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPC2012X135N"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 183.8452 83.82 0)
 			(effects
 				(font
@@ -26774,7 +26774,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPC2012X135N"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 44.7548 224.79 0)
 			(effects
 				(font
@@ -27046,7 +27046,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPC3216X180N"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 33.9852 34.29 0)
 			(effects
 				(font
@@ -28039,7 +28039,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPC3216X180N"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 45.4152 34.29 0)
 			(effects
 				(font
@@ -28109,7 +28109,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPC2012X135N"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 106.3752 147.32 0)
 			(effects
 				(font
@@ -28379,7 +28379,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPC2012X135N"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 76.5048 234.95 0)
 			(effects
 				(font
@@ -28449,7 +28449,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPC1608X90N"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 96.2152 88.9 0)
 			(effects
 				(font
@@ -29483,7 +29483,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPC1608X90N"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 60.6552 133.35 0)
 			(effects
 				(font
@@ -29925,7 +29925,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPC2012X135N"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 457.5048 90.17 0)
 			(effects
 				(font
@@ -30732,7 +30732,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPC1608X90N"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 382.27 99.3648 0)
 			(effects
 				(font
@@ -30802,7 +30802,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CAPC2012X135N"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 106.3752 171.45 0)
 			(effects
 				(font

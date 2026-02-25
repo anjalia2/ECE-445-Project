@@ -362,7 +362,7 @@
 		(property "Reference" "LED6"
 			(at 0 0 0)
 			(layer "F.SilkS")
-			(uuid "f8c35e96-e50c-4b71-9e3d-5e862fc40f7d")
+			(uuid "8e095624-16a8-4c3e-9b9a-d8c14fbc722d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -374,7 +374,7 @@
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "7ac6cb4a-5a81-45e8-a708-0af1c2d14a8b")
+			(uuid "1600b2b9-b4dc-43a2-8007-7a9582a15e94")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -386,7 +386,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2d22938c-ca00-41fb-ab2d-77eee39bd198")
+			(uuid "56f89aa8-356e-4375-a405-460b4dc72688")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -398,7 +398,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7b9b5836-6fdf-4bb1-b61d-d9bdbb26a52c")
+			(uuid "2f7bf779-02d3-43fe-98ca-18bf1a8c1f05")
 			(effects
 				(font
 					(size 1.27 1.27)
