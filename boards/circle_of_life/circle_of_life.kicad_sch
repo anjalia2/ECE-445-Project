@@ -23348,7 +23348,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DPY(R-PX1SON-N2)"
+		(property "Footprint" "SamacSys_Parts:DPY_R-PX1SON-N2_"
 			(at 342.9 265.1 0)
 			(effects
 				(font
