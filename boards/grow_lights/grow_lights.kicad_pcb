@@ -44,7 +44,7 @@
 			(usegerberextensions no)
 			(usegerberattributes yes)
 			(usegerberadvancedattributes yes)
-			(creategerberjobfile yes)
+			(creategerberjobfile no)
 			(dashed_line_dash_ratio 12.000000)
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 4)
@@ -72,7 +72,7 @@
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
 			(outputdirectory "")
 		)
@@ -3324,10 +3324,23 @@
 		(layer "Edge.Cuts")
 		(uuid "1c9451b2-4dc0-45ba-8694-5be54c72ca9f")
 	)
+	(gr_text "Team 73 \nCircle of Life LED V1"
+		(at 135.89 109.22 0)
+		(layer "F.SilkS")
+		(uuid "e4b50214-8c51-4e01-9998-c9e096c47770")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
 	(segment
 		(start 142.24 135.89)
 		(end 143.002 136.652)
-		(width 0.2)
+		(width 1.3)
 		(layer "F.Cu")
 		(net 1)
 		(uuid "0a25230b-8efb-47d7-ad90-6eca3782b8d1")
@@ -3335,15 +3348,15 @@
 	(segment
 		(start 143.002 136.652)
 		(end 145.283 136.652)
-		(width 0.2)
+		(width 1.3)
 		(layer "F.Cu")
 		(net 1)
 		(uuid "c4e7c4b6-6725-4f10-b51d-29162844e6cf")
 	)
 	(via
 		(at 142.24 135.89)
-		(size 0.6)
-		(drill 0.3)
+		(size 1.3)
+		(drill 0.8)
 		(layers "F.Cu" "B.Cu")
 		(free yes)
 		(net 1)
@@ -3352,7 +3365,7 @@
 	(segment
 		(start 110.536 70.674)
 		(end 117.078 77.216)
-		(width 0.2)
+		(width 1.3)
 		(layer "F.Cu")
 		(net 2)
 		(uuid "9f66a29b-6455-4bca-a16f-e005aca23d0a")
@@ -3360,7 +3373,7 @@
 	(segment
 		(start 110.536 58.928)
 		(end 110.536 70.674)
-		(width 0.2)
+		(width 1.3)
 		(layer "F.Cu")
 		(net 2)
 		(uuid "aac458b3-357b-47b7-95ff-777ef46d21ff")
@@ -3376,7 +3389,7 @@
 	(segment
 		(start 145.537 96.266)
 		(end 120.158 96.266)
-		(width 0.2)
+		(width 1.3)
 		(layer "F.Cu")
 		(net 3)
 		(uuid "e6e455c3-334c-4d3f-8a8b-6f328cd401f0")
@@ -3392,7 +3405,7 @@
 	(segment
 		(start 116.851 97.028)
 		(end 116.851 117.829)
-		(width 0.2)
+		(width 1.3)
 		(layer "F.Cu")
 		(net 4)
 		(uuid "e2a6759e-8939-4cba-b1d8-6e1afdd49e3a")
@@ -3400,7 +3413,7 @@
 	(segment
 		(start 173.731 96.266)
 		(end 148.082 96.266)
-		(width 0.2)
+		(width 1.3)
 		(layer "F.Cu")
 		(net 5)
 		(uuid "15eb416c-ac8c-401f-8f40-af6b5e1f376f")
@@ -3424,7 +3437,7 @@
 	(segment
 		(start 175.762 78.232)
 		(end 175.762 95.752)
-		(width 0.2)
+		(width 1.3)
 		(layer "F.Cu")
 		(net 6)
 		(uuid "2cde3910-d204-4ef9-ab89-bd80f0cd23b8")
@@ -3456,7 +3469,7 @@
 	(segment
 		(start 119.423 117.856)
 		(end 146.045 117.856)
-		(width 0.2)
+		(width 1.3)
 		(layer "F.Cu")
 		(net 7)
 		(uuid "9580b316-1f70-4d15-9fa2-64906e461442")
@@ -3464,7 +3477,7 @@
 	(segment
 		(start 149.098 118.364)
 		(end 172.715 118.364)
-		(width 0.2)
+		(width 1.3)
 		(layer "F.Cu")
 		(net 8)
 		(uuid "ddc83557-3674-4cdb-9489-1defa8e424b1")
@@ -3472,7 +3485,7 @@
 	(segment
 		(start 119.623 77.216)
 		(end 145.029 77.216)
-		(width 0.2)
+		(width 1.3)
 		(layer "F.Cu")
 		(net 9)
 		(uuid "e07e9db3-7519-4c12-930b-1b8cb1439db7")
@@ -3504,7 +3517,7 @@
 	(segment
 		(start 147.828 77.47)
 		(end 172.455 77.47)
-		(width 0.2)
+		(width 1.3)
 		(layer "F.Cu")
 		(net 10)
 		(uuid "9952dccd-7a48-485b-a4f1-b8ce6291de24")
@@ -3520,7 +3533,7 @@
 	(segment
 		(start 157.988 136.652)
 		(end 147.828 136.652)
-		(width 0.2)
+		(width 1.3)
 		(layer "F.Cu")
 		(net 11)
 		(uuid "374023bb-dde6-4393-ae4d-91c484070fe7")
@@ -3528,7 +3541,7 @@
 	(segment
 		(start 175.26 119.38)
 		(end 157.988 136.652)
-		(width 0.2)
+		(width 1.3)
 		(layer "F.Cu")
 		(net 11)
 		(uuid "e4572bfc-3adb-4bf7-8a26-ae7a0964c3ab")
