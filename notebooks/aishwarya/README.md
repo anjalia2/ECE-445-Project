@@ -47,7 +47,7 @@ As we continue working on the PCB, I have been assigning footprints for the resi
 ## February 21st, 2026
 
 Since Estela completed the schematic and Anjali and I finished assigning the footprints, I began drawing the traces on our PCB for the 5 Volt area of the PCB. I ended up drawing the traces for the entire right top side of the board. This took quite a bit of effort as I was trying to make sure the traces were neat and not too long. I connected those parts and also added a separate ground plane for that area, since we want separate ground planes for that area and the 3.3 Volt area and the power area on the PCB board.
-![Alt text](notebooks\aishwarya\images\Screenshot 2026-03-01 165308.png)
+![Alt text](images\Screenshot 2026-03-01 165308.png)
 
 ## February 24th, 2026
 
@@ -61,3 +61,4 @@ I worked on the design document. I completed the parts list on the design docume
 
 
 We are planning out what to do this week. We split up parts of the design document for each of us to present during our Design Review this Tuesday. We also discussed the breadboard demo and what we will have to do for that. We verified that all our surface mount parts are ordered for our PCB, and we plan to ask our TA about which subsystem we can build for our breadboard demo. We are currently planning on building our servo motor subsystem (the fish feeder subsystem). Anjali and I will be primarily working on the breadboard while Estela makes updates to our PCB design.
+
