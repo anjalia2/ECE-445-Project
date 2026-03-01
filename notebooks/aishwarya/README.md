@@ -59,4 +59,5 @@ I worked on the design document. I completed the parts list on the design docume
 
 ## March 1st, 2026
 
+
 We are planning out what to do this week. We split up parts of the design document for each of us to present during our Design Review this Tuesday. We also discussed the breadboard demo and what we will have to do for that. We verified that all our surface mount parts are ordered for our PCB, and we plan to ask our TA about which subsystem we can build for our breadboard demo. We are currently planning on building our servo motor subsystem (the fish feeder subsystem). Anjali and I will be primarily working on the breadboard while Estela makes updates to our PCB design.
