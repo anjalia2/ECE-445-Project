@@ -12,16 +12,17 @@ int flowPin = 4;
 int pos = 0; 
 bool servo_on = false;
 
-int offset = 0;
+int offset = 2.19;
 int pHArray[arrayLength]; 
 int pHArrayIndex = 0;
 float voltage, pHValue;
 
 int time_limit = 30 * 1000; 
-int time_limit_ph = 5 * 1000;
+int time_limit_ph = 5 * 10;
 int time_limit_flow = 5 * 1000;
+int time_limit_ph_print = 5 * 1000;
 unsigned long last_rotation = 0;
-unsigned long current, last_ph, last_flow;
+unsigned long current, last_ph, last_flow, last_ph_print;
 
 int lastHallState = HIGH;
 int NbTopsFan = 0;
@@ -83,6 +84,7 @@ void setup() {
 	last_rotation = millis();
 	last_ph = millis();
 	last_flow = millis();
+	last_ph_print = millis();
 
 	Serial.begin(9600);
 }
@@ -105,16 +107,19 @@ void loop() {
 		servo_on = false;
  }
 
- if(current - last_ph >= time_limit_ph){
-		pHArray[pHArrayIndex++]=analogRead(phPin);
-		if(pHArrayIndex==arrayLength)pHArrayIndex=0;
-		voltage = averageArray(pHArray, arrayLength)*3.3/4096;;
-		pHValue = 3.5*voltage+offset;
-	
+ if(current - last_ph_print >= time_limit_ph_print){
 		Serial.print("Voltage:");
 		Serial.print(voltage,2);
 		Serial.print(" pH value: ");
 		Serial.println(pHValue,2);
+		last_ph_print = millis();
+ }
+
+ if(current - last_ph >= time_limit_ph){
+	  pHArray[pHArrayIndex++]=analogRead(phPin);
+		if(pHArrayIndex==arrayLength)pHArrayIndex=0;
+		voltage = averageArray(pHArray, arrayLength)*3.3/4096; // 4096 is 2^12 since ADC is 12 volts
+		pHValue = 3.5*voltage+offset;
 		last_ph = millis();
  }
 
@@ -127,7 +132,7 @@ void loop() {
 	}
 
 	if(current - last_flow >= time_limit_flow) {
-			flowRate = (NbTopsFan * 60.0 / 7.5);
+			flowRate = (NbTopsFan * 60.0 / 7.5); //per min -- 7.5 calibration factor
 					NbTopsFan = 0;
 					last_flow = millis();
 					Serial.print("Flow rate: ");
