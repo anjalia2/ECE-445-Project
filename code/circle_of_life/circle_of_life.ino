@@ -1,6 +1,13 @@
 #include <ESP32Servo.h>
+#include <OneWire.h>
+#include <DallasTemperature.h>
 
 #define arrayLength 40
+#define ONE_WIRE_BUS 35
+
+OneWire oneWire(ONE_WIRE_BUS);
+DallasTemperature sensors(&oneWire);
+
 
 Servo myservo;
  
@@ -87,9 +94,23 @@ void setup() {
 	last_ph_print = millis();
 
 	Serial.begin(9600);
+	sensors.begin();
 }
  
 void loop() {
+
+	// sensors.requestTemperatures(); 
+   
+  // delay(750);
+   
+  // float tempC = sensors.getTempCByIndex(0);
+  // Serial.print("Temperature: ");
+  // Serial.print(tempC);
+  // Serial.println("°C");
+	// Serial.println(sensors.getDeviceCount());
+  //delay(1000);
+
+
 	current = millis();
 	
   if(current - last_rotation >= time_limit){
