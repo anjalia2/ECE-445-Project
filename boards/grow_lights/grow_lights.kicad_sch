@@ -936,7 +936,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:ASMWL300AFH0E"
+		(property "Footprint" "SamacSys_Parts:ASMWLL00NKM0E"
 			(at 152.4 -37.77 0)
 			(effects
 				(font
@@ -1057,7 +1057,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:ASMWL300AFH0E"
+		(property "Footprint" "SamacSys_Parts:ASMWLL00NKM0E"
 			(at 111.76 -37.77 0)
 			(effects
 				(font
@@ -1241,7 +1241,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:ASMWL300AFH0E"
+		(property "Footprint" "SamacSys_Parts:ASMWLL00NKM0E"
 			(at 194.31 -37.77 0)
 			(effects
 				(font
@@ -1361,7 +1361,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:ASMWL300AFH0E"
+		(property "Footprint" "SamacSys_Parts:ASMWLL00NKM0E"
 			(at 172.72 -37.77 0)
 			(effects
 				(font
@@ -1481,7 +1481,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:ASMWL300AFH0E"
+		(property "Footprint" "SamacSys_Parts:ASMWLL00NKM0E"
 			(at 130.81 -37.77 0)
 			(effects
 				(font

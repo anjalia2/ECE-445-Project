@@ -12,9 +12,19 @@ DallasTemperature sensors(&oneWire);
 Servo myservo;
  
   
-int servoPin = 23;
-int phPin = 33;
-int flowPin = 4;
+int servoPin = 26;
+int phPin = 32;
+int flowPin = 25;
+int phFaultPin = 33;
+
+//AISHWARYA'S LED CODE
+int ledPin = 18;
+unsigned long startLedSeq = 0;
+unsigned long sunrise = 10000; //some default vals
+unsigned long dayLength = 15000;
+unsigned long sunset = 10000;
+unsigned long nightLength = 15000;
+
 
 int pos = 0; 
 bool servo_on = false;
@@ -88,10 +98,16 @@ void setup() {
 	myservo.setPeriodHertz(50);   
 	myservo.attach(servoPin, 500, 2400);
 	pinMode(flowPin, INPUT_PULLUP);
+	pinMode(phFaultPin, OUTPUT);
 	last_rotation = millis();
 	last_ph = millis();
 	last_flow = millis();
 	last_ph_print = millis();
+
+	//AISHWARYA'S LED CODE
+  //ledcAttach(ledPin, 5000, 8);
+	pinMode(ledPin, OUTPUT);
+  startLedSeq = millis(); //start time of the led seq initially
 
 	Serial.begin(9600);
 	sensors.begin();
@@ -134,6 +150,13 @@ void loop() {
 		Serial.print(" pH value: ");
 		Serial.println(pHValue,2);
 		last_ph_print = millis();
+		if(pHValue < 5 || pHValue > 8){
+			digitalWrite(phFaultPin, HIGH);
+			Serial.println("pH fault LED ON");
+		} else {
+			digitalWrite(phFaultPin, LOW);
+			Serial.println("pH fault LED OFF");
+		}
  }
 
  if(current - last_ph >= time_limit_ph){
@@ -162,6 +185,30 @@ void loop() {
 					last_flow = millis();
 	}
 
+	//AISHWARYA'S LED CODE
 
+    // int pwmMin = 75;
+    // int pwmMax = 155;
+    // if(current - startLedSeq >= sunrise + dayLength + sunset + nightLength){
+    //     startLedSeq = millis(); //start a new sequence now
+    // }
+    // int intensity; //light brightness
+    // if(current - startLedSeq < sunrise){
+    //     //start sunrise
+    //     intensity = (current - startLedSeq)*(pwmMax - pwmMin)/sunrise; //increase brightness with time until reach daytime brightness
+    // }
+    // else if(current - startLedSeq < sunrise + dayLength){ //daytime
+    //     intensity = 155;
+    // }
+    // else if(current - startLedSeq < sunrise + dayLength + sunset){
+    //     unsigned long timeSunset = (current - startLedSeq) - (sunrise + dayLength);
+    //     intensity = -1*((timeSunset)*(pwmMax - pwmMin)/sunset) + pwmMax;
+    // }
+    // else{
+    //     intensity = 75;
+    // }
+    // ledcWrite(0,intensity);
+		//ledcWrite(0, HIGH);
+		digitalWrite(ledPin, HIGH);
 
 }
