@@ -41,7 +41,7 @@
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
-			(usegerberextensions yes)
+			(usegerberextensions no)
 			(usegerberattributes yes)
 			(usegerberadvancedattributes yes)
 			(creategerberjobfile no)
@@ -74,7 +74,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "files_v3/")
 		)
 	)
 	(net 0 "")
@@ -3620,7 +3620,7 @@
 		(layer "Edge.Cuts")
 		(uuid "1c9451b2-4dc0-45ba-8694-5be54c72ca9f")
 	)
-	(gr_text "Team 73 \nCircle of Life LED V1"
+	(gr_text "Team 73 \nCircle of Life LED V4"
 		(at 135.89 109.22 0)
 		(layer "F.SilkS")
 		(uuid "e4b50214-8c51-4e01-9998-c9e096c47770")
