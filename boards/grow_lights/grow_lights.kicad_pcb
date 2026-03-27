@@ -41,7 +41,7 @@
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
-			(usegerberextensions yes)
+			(usegerberextensions no)
 			(usegerberattributes yes)
 			(usegerberadvancedattributes yes)
 			(creategerberjobfile no)
@@ -74,7 +74,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "files_v3/")
 		)
 	)
 	(net 0 "")
@@ -452,14 +452,14 @@
 			)
 		)
 	)
-	(footprint "SamacSys_Parts:ASMWL300AFH0E"
+	(footprint "SamacSys_Parts:ASMWLL00NKM0E"
 		(layer "F.Cu")
 		(uuid "4fb97d69-6a6d-42f6-bd4b-a60a26352731")
 		(at 118.618 77.216 180)
-		(descr "ASMW-L300-AFH0E-2")
+		(descr "ASMW-LL00-NKM0E-2")
 		(tags "LED")
 		(property "Reference" "LED6"
-			(at 0 0 0)
+			(at 0 0 180)
 			(layer "F.SilkS")
 			(uuid "8e095624-16a8-4c3e-9b9a-d8c14fbc722d")
 			(effects
@@ -470,7 +470,7 @@
 			)
 		)
 		(property "Value" "ASMW-LD00-AGJ0E"
-			(at 0 0 0)
+			(at 0 0 180)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "1600b2b9-b4dc-43a2-8007-7a9582a15e94")
@@ -482,7 +482,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.de/datasheet/2/678/Broadcom_01_02_2020_ASMW_LD00_AGJ0E_ASMW_L300_AFH0-1892072.pdf"
-			(at 0 0 0)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "56f89aa8-356e-4375-a405-460b4dc72688")
@@ -494,7 +494,7 @@
 			)
 		)
 		(property "Description" "High Power LEDs - Single Colour Horticulture 0.5W 2835 Surface Mount LED"
-			(at 0 0 0)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2f7bf779-02d3-43fe-98ca-18bf1a8c1f05")
@@ -510,7 +510,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "29ef77cd-5883-4720-b10f-b37fb62269f5")
+			(uuid "6e3dc637-16ae-42e3-80f2-84536a9780e5")
 			(effects
 				(font
 					(size 1 1)
@@ -523,7 +523,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "903f9f29-bc0b-4ab4-b2a8-9ff169656d94")
+			(uuid "9a3b853e-5ad4-456d-b9b7-66f9732f1d2f")
 			(effects
 				(font
 					(size 1 1)
@@ -536,7 +536,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c5e81568-0126-4555-97c5-d69c0e8b76bc")
+			(uuid "4637a71a-71b2-47cb-9350-a0f0affe08aa")
 			(effects
 				(font
 					(size 1 1)
@@ -549,7 +549,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "53324fe4-2d59-4aff-87d2-0149b5edb047")
+			(uuid "a33ef780-2ab1-449b-851c-f2a0d6f27777")
 			(effects
 				(font
 					(size 1 1)
@@ -562,7 +562,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "62a483d8-71a2-4610-902f-0a36df07d92f")
+			(uuid "3dfb4ee8-4ef6-481e-a202-3e529730acd6")
 			(effects
 				(font
 					(size 1 1)
@@ -582,7 +582,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "9c9f8526-4ac5-40a1-ac7c-9753dbcab97c")
+			(uuid "5770b903-ce4b-44f0-a233-27931a2a0719")
 		)
 		(fp_line
 			(start 2.7 0)
@@ -592,27 +592,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "0127228f-9285-42ec-b849-d562ba5941e1")
-		)
-		(fp_line
-			(start -1.75 1.4)
-			(end 1.75 1.4)
-			(stroke
-				(width 0.2)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "600933f7-3ade-4f2b-9f38-22f7c4ae714f")
-		)
-		(fp_line
-			(start -1.75 -1.4)
-			(end 1.75 -1.4)
-			(stroke
-				(width 0.2)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "1ac2d50e-44f2-457e-99b9-76a2fc2ccb8a")
+			(uuid "962a645b-57c2-4bd3-9541-151cfd97caf3")
 		)
 		(fp_arc
 			(start 2.8 0)
@@ -623,7 +603,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "1a2c0637-7da7-473b-8dfc-b3d82d9c4a99")
+			(uuid "abdd9c86-5c1c-4a96-a0bf-2b123546e1a7")
 		)
 		(fp_arc
 			(start 2.7 0)
@@ -634,7 +614,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "eea1c806-e8ce-4219-b4ca-08afdad47201")
+			(uuid "0793f128-1f70-4b92-9bb8-54121c36ed76")
 		)
 		(fp_line
 			(start 3.25 2.4)
@@ -644,7 +624,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "6bd490f3-fa7f-49cb-bdb9-0d2450e869d3")
+			(uuid "f1252b3f-b499-4bad-b260-9bad83a8b9ac")
 		)
 		(fp_line
 			(start 3.25 -2.4)
@@ -654,7 +634,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "6d7b3587-faeb-4486-b04b-f61e606d2897")
+			(uuid "4619b10a-1458-47db-ac6d-b9107f713fd6")
 		)
 		(fp_line
 			(start -3.25 2.4)
@@ -664,7 +644,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "d7441402-d5ab-499e-b346-5f2aeb2d2ad4")
+			(uuid "2976bf8f-0beb-4fe8-9165-80a91631cc82")
 		)
 		(fp_line
 			(start -3.25 -2.4)
@@ -674,7 +654,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "98bc7dca-d9d5-461d-9001-e44ba1942c84")
+			(uuid "fceeef81-661e-4f0d-a194-132f36ec6a08")
 		)
 		(fp_line
 			(start 1.75 1.4)
@@ -684,7 +664,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "682c9bc2-4fa5-4488-b84d-5b081c60cb89")
+			(uuid "d1ca1904-d7af-46dd-b7bc-597976253248")
 		)
 		(fp_line
 			(start 1.75 -1.4)
@@ -694,7 +674,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "d67f2937-8b5b-4962-9ddd-38925fe7bf9a")
+			(uuid "5cc49c18-1693-4915-b4c2-830f96afda8f")
 		)
 		(fp_line
 			(start -1.75 1.4)
@@ -704,7 +684,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "3cf953b7-b594-4cc9-a64a-613d0a85d709")
+			(uuid "6afca510-4ccd-4a4a-a545-df59681817a6")
 		)
 		(fp_line
 			(start -1.75 -1.4)
@@ -714,10 +694,10 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "ff0ed143-18b3-4f95-9ab9-c558c909a9a4")
+			(uuid "d954cf78-5995-48f6-9750-652f713547e7")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(uuid "408434d4-4ffb-423d-82d8-a1c309eb968d")
 			(effects
@@ -728,8 +708,8 @@
 			)
 		)
 		(pad "1" smd rect
-			(at 1.54 0 180)
-			(size 1.42 2.1)
+			(at 1.005 0 270)
+			(size 2.1 2.49)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "LEDS")
 			(pinfunction "A")
@@ -737,8 +717,8 @@
 			(uuid "65248bf2-9263-4990-8f74-737819e10445")
 		)
 		(pad "2" smd rect
-			(at -1.005 0 270)
-			(size 2.1 2.49)
+			(at -1.54 0 180)
+			(size 1.42 2.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 9 "Net-(LED6-K)")
 			(pinfunction "K")
@@ -746,7 +726,7 @@
 			(uuid "33461947-f602-49d9-9a24-bb8e4d2907d5")
 		)
 		(embedded_fonts no)
-		(model "C:\\Users\\Anjal\\ECE-445-Project\\boards\\libraries\\SamacSys_Parts.3dshapes\\ASMW-L300-AFH0E.stp"
+		(model "C:\\Users\\Anjal\\ECE-445-Project\\boards\\libraries\\SamacSys_Parts.3dshapes\\ASMW-LL00-NKM0E.stp"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -754,7 +734,7 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -90 0 -180)
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -1044,11 +1024,11 @@
 			)
 		)
 	)
-	(footprint "SamacSys_Parts:ASMWL300AFH0E"
+	(footprint "SamacSys_Parts:ASMWLL00NKM0E"
 		(layer "F.Cu")
 		(uuid "5b7ed7d0-cf12-4c81-946b-ae65ca4ca90b")
 		(at 146.542 96.266)
-		(descr "ASMW-L300-AFH0E-2")
+		(descr "ASMW-LL00-NKM0E-2")
 		(tags "LED")
 		(property "Reference" "LED4"
 			(at 0 0 0)
@@ -1102,7 +1082,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f2b80acb-5d08-4450-b580-9c9b0b915a55")
+			(uuid "35e77238-38ff-494b-aff8-d1cd8a821008")
 			(effects
 				(font
 					(size 1 1)
@@ -1115,7 +1095,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4b39fe0f-c4b3-4510-896d-14f7c23d2863")
+			(uuid "358a5a52-cdd9-4964-b653-8de45cfceec3")
 			(effects
 				(font
 					(size 1 1)
@@ -1128,7 +1108,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8541a206-3c0d-4835-a1ea-142206b3614c")
+			(uuid "84f0d273-2218-42a6-99c1-4c7dc2ab1c89")
 			(effects
 				(font
 					(size 1 1)
@@ -1141,7 +1121,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "bbde909d-27e5-47ef-9543-aaa467b37e8a")
+			(uuid "a68a28ca-bb7c-40bc-8b98-f43f05f35ac0")
 			(effects
 				(font
 					(size 1 1)
@@ -1154,7 +1134,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "38e7156a-fb67-41ef-8435-a01b505b2ce1")
+			(uuid "97a3954f-4d1b-442c-95e9-45550031e9ff")
 			(effects
 				(font
 					(size 1 1)
@@ -1167,26 +1147,6 @@
 		(sheetfile "grow_lights.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -1.75 -1.4)
-			(end 1.75 -1.4)
-			(stroke
-				(width 0.2)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "52362324-1d68-4ea0-9108-e7f5e131d99d")
-		)
-		(fp_line
-			(start -1.75 1.4)
-			(end 1.75 1.4)
-			(stroke
-				(width 0.2)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "6ccb72f0-e08c-40c2-8d25-a8ab0f2c96b3")
-		)
-		(fp_line
 			(start 2.7 0)
 			(end 2.7 0)
 			(stroke
@@ -1194,7 +1154,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "7d30c4d1-0379-44b1-a599-5a2e5a5cae02")
+			(uuid "ef92d874-ac49-4534-ae29-ab49229f0a94")
 		)
 		(fp_line
 			(start 2.8 0)
@@ -1204,7 +1164,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "81e2dc46-dd6f-46d2-90a1-af0cc91c6758")
+			(uuid "b8b46852-2810-458e-9535-5ba388e36f85")
 		)
 		(fp_arc
 			(start 2.7 0)
@@ -1215,7 +1175,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "e9288437-f410-40e0-bb21-74fc632b11d2")
+			(uuid "2b0bad56-8b3e-4ae4-a131-ceb7ee76a55b")
 		)
 		(fp_arc
 			(start 2.8 0)
@@ -1226,7 +1186,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "ab395edb-0df5-46e2-a045-f6cf767c3a49")
+			(uuid "0fe85aec-d981-4757-b2b4-45bd3764498b")
 		)
 		(fp_line
 			(start -3.25 -2.4)
@@ -1236,7 +1196,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "b328c97f-8729-4683-879d-4b92814d9880")
+			(uuid "b2d28002-5e50-43cf-9948-2a9c0c4872e8")
 		)
 		(fp_line
 			(start -3.25 2.4)
@@ -1246,7 +1206,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "fad88100-6ba9-43f3-a5c3-6d3e59f6a1ee")
+			(uuid "862d7d84-99b1-46b0-8558-5a20288dc04b")
 		)
 		(fp_line
 			(start 3.25 -2.4)
@@ -1256,7 +1216,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "7fb051e5-5c31-435e-9f2e-7dab69e5c29c")
+			(uuid "b6eac3bb-fb2c-4eb1-a549-70588848389e")
 		)
 		(fp_line
 			(start 3.25 2.4)
@@ -1266,7 +1226,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "901bdf98-99d7-4840-a7d1-1a1004755f4d")
+			(uuid "a10925e2-b525-400a-a0ab-274cc4aa0d17")
 		)
 		(fp_line
 			(start -1.75 -1.4)
@@ -1276,7 +1236,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "e2f3a1ad-fdf3-405d-8a4f-17bbcf6ca60d")
+			(uuid "7a18c27c-383f-442e-8612-ad5eab115fef")
 		)
 		(fp_line
 			(start -1.75 1.4)
@@ -1286,7 +1246,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "947e57aa-4624-414b-afc7-eda135087491")
+			(uuid "41732302-f617-4daf-80d6-8e7d844e7d01")
 		)
 		(fp_line
 			(start 1.75 -1.4)
@@ -1296,7 +1256,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "53668c17-ca7e-41f5-aaf4-e9bdce5b22aa")
+			(uuid "4d048059-9d49-4e8e-9767-6c2243a8cf4a")
 		)
 		(fp_line
 			(start 1.75 1.4)
@@ -1306,7 +1266,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "a95a55e7-242c-4f17-80ab-4477cbf7c732")
+			(uuid "56a6a1fd-07b9-45ea-84a1-47442f1ec594")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 0 0)
@@ -1320,8 +1280,8 @@
 			)
 		)
 		(pad "1" smd rect
-			(at 1.54 0)
-			(size 1.42 2.1)
+			(at 1.005 0 90)
+			(size 2.1 2.49)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 5 "Net-(LED2-K)")
 			(pinfunction "A")
@@ -1329,8 +1289,8 @@
 			(uuid "8b51247c-69c4-4172-9f0f-4e6f4ef737cf")
 		)
 		(pad "2" smd rect
-			(at -1.005 0 90)
-			(size 2.1 2.49)
+			(at -1.54 0)
+			(size 1.42 2.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 3 "Net-(LED1-A)")
 			(pinfunction "K")
@@ -1338,7 +1298,7 @@
 			(uuid "fdef30c0-3b31-42d8-a935-2f6737591bbd")
 		)
 		(embedded_fonts no)
-		(model "C:\\Users\\Anjal\\ECE-445-Project\\boards\\libraries\\SamacSys_Parts.3dshapes\\ASMW-L300-AFH0E.stp"
+		(model "C:\\Users\\Anjal\\ECE-445-Project\\boards\\libraries\\SamacSys_Parts.3dshapes\\ASMW-LL00-NKM0E.stp"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1346,7 +1306,7 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -90 0 -180)
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -1636,14 +1596,14 @@
 			)
 		)
 	)
-	(footprint "SamacSys_Parts:ASMWL300AFH0E"
+	(footprint "SamacSys_Parts:ASMWLL00NKM0E"
 		(layer "F.Cu")
 		(uuid "62ca7fac-e6c8-40a2-a1fb-82833eba6551")
 		(at 146.823 77.47 180)
-		(descr "ASMW-L300-AFH0E-2")
+		(descr "ASMW-LL00-NKM0E-2")
 		(tags "LED")
 		(property "Reference" "LED7"
-			(at 0 0 0)
+			(at 0 0 180)
 			(layer "F.SilkS")
 			(uuid "16f008bf-aeae-4524-ab23-d2d8d2e0a046")
 			(effects
@@ -1654,7 +1614,7 @@
 			)
 		)
 		(property "Value" "ASMW-LD00-AGJ0E"
-			(at 0 0 0)
+			(at 0 0 180)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "80f26cfd-c969-4fc2-a589-dc137b9a77de")
@@ -1666,7 +1626,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.de/datasheet/2/678/Broadcom_01_02_2020_ASMW_LD00_AGJ0E_ASMW_L300_AFH0-1892072.pdf"
-			(at 0 0 0)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e9252ed5-77f5-4ce0-80db-a32eb95ec7ca")
@@ -1678,7 +1638,7 @@
 			)
 		)
 		(property "Description" "High Power LEDs - Single Colour Horticulture 0.5W 2835 Surface Mount LED"
-			(at 0 0 0)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8723711d-9651-48d2-a9a9-f25d844d69c0")
@@ -1694,7 +1654,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "dafe3f02-35d4-4b55-b11e-d8e88ce4b910")
+			(uuid "2f6d5776-0b89-42fa-b9af-20d6e459f3c3")
 			(effects
 				(font
 					(size 1 1)
@@ -1707,7 +1667,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6a6e2f30-e7f7-4342-b3d0-fb992aa2c8f3")
+			(uuid "bc775d70-ab3f-4770-9772-3b7617ebe50b")
 			(effects
 				(font
 					(size 1 1)
@@ -1720,7 +1680,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "11fe3165-8f2b-4759-9d2e-97e83950c93c")
+			(uuid "5e31f5bc-ac84-4569-bfc9-7fdfa8e21526")
 			(effects
 				(font
 					(size 1 1)
@@ -1733,7 +1693,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a72f1fb6-7d79-40af-b6ac-89ed9998287e")
+			(uuid "e68c5a47-dcbd-40be-bd03-b9d5ea46f419")
 			(effects
 				(font
 					(size 1 1)
@@ -1746,7 +1706,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c2022210-a3e2-42bf-bb09-8fc1cf78a275")
+			(uuid "d4c82034-0a25-4520-98e5-7392209225c2")
 			(effects
 				(font
 					(size 1 1)
@@ -1766,7 +1726,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "45972d16-a431-4f37-8acf-f44b1f982c4f")
+			(uuid "2038883f-2120-414b-a895-4a4df9725441")
 		)
 		(fp_line
 			(start 2.7 0)
@@ -1776,27 +1736,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "d0512904-31f2-4c96-939f-0d410d48d714")
-		)
-		(fp_line
-			(start -1.75 1.4)
-			(end 1.75 1.4)
-			(stroke
-				(width 0.2)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "a20be479-357e-4a9f-a368-eb2ed381ad8e")
-		)
-		(fp_line
-			(start -1.75 -1.4)
-			(end 1.75 -1.4)
-			(stroke
-				(width 0.2)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "ab8004c6-43ef-4913-8c36-f6c2912cd3b3")
+			(uuid "34000796-1fbe-4808-b964-60289888a6c8")
 		)
 		(fp_arc
 			(start 2.8 0)
@@ -1807,7 +1747,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "1c253906-6bfd-400e-9d85-90beaf204f8b")
+			(uuid "202402a8-d9ea-4673-8b3b-b32b95daca35")
 		)
 		(fp_arc
 			(start 2.7 0)
@@ -1818,7 +1758,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "85f35f1f-3c8b-4908-9089-4bc892ee4a9b")
+			(uuid "1724f398-74c8-4db1-b67d-385f914e9977")
 		)
 		(fp_line
 			(start 3.25 2.4)
@@ -1828,7 +1768,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "51b2c283-8f7a-4f75-8ee1-a1702e38d569")
+			(uuid "8754097c-f46c-4f00-93c9-f23436701bfa")
 		)
 		(fp_line
 			(start 3.25 -2.4)
@@ -1838,7 +1778,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "ba4a7fbf-044b-4954-a911-1e848d5bae8c")
+			(uuid "6fea0ddf-9171-4081-a79b-1f92da3bb722")
 		)
 		(fp_line
 			(start -3.25 2.4)
@@ -1848,7 +1788,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "ab4dc79d-2f20-47cc-9f35-50e673d245a2")
+			(uuid "38c7c468-2d39-42c7-9c00-96496ab07904")
 		)
 		(fp_line
 			(start -3.25 -2.4)
@@ -1858,7 +1798,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "a7d1f116-277b-4da6-b518-84ff190bdb41")
+			(uuid "fca7aa53-46bf-407f-b145-084a4e62240f")
 		)
 		(fp_line
 			(start 1.75 1.4)
@@ -1868,7 +1808,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "89193924-856f-40ee-a674-97fa4f4a245e")
+			(uuid "a2aa0484-d085-4cec-b7ab-e9487353de1b")
 		)
 		(fp_line
 			(start 1.75 -1.4)
@@ -1878,7 +1818,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "44715c97-04d5-42d9-9dfa-e534d1056e63")
+			(uuid "d1e69733-b29b-49ca-abed-320b3980284a")
 		)
 		(fp_line
 			(start -1.75 1.4)
@@ -1888,7 +1828,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "2ef43e7c-b12b-40c2-86bd-8e5695121e40")
+			(uuid "e636710e-be69-464f-aabd-675fb3dd07c8")
 		)
 		(fp_line
 			(start -1.75 -1.4)
@@ -1898,10 +1838,10 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "64b6bc52-5f51-4011-8d0e-3a2dbb93b48c")
+			(uuid "be851e3c-5b11-44cb-9610-25ee7d1d2124")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(uuid "0c5eb6c0-368f-44b8-aced-98ef43c97a1e")
 			(effects
@@ -1912,8 +1852,8 @@
 			)
 		)
 		(pad "1" smd rect
-			(at 1.54 0 180)
-			(size 1.42 2.1)
+			(at 1.005 0 270)
+			(size 2.1 2.49)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 9 "Net-(LED6-K)")
 			(pinfunction "A")
@@ -1921,8 +1861,8 @@
 			(uuid "70541e97-eafb-4bec-8624-82485f29b31a")
 		)
 		(pad "2" smd rect
-			(at -1.005 0 270)
-			(size 2.1 2.49)
+			(at -1.54 0 180)
+			(size 1.42 2.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 10 "Net-(LED7-K)")
 			(pinfunction "K")
@@ -1930,7 +1870,7 @@
 			(uuid "c25ada51-79c4-429a-896a-22e01aead503")
 		)
 		(embedded_fonts no)
-		(model "C:\\Users\\Anjal\\ECE-445-Project\\boards\\libraries\\SamacSys_Parts.3dshapes\\ASMW-L300-AFH0E.stp"
+		(model "C:\\Users\\Anjal\\ECE-445-Project\\boards\\libraries\\SamacSys_Parts.3dshapes\\ASMW-LL00-NKM0E.stp"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1938,7 +1878,7 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -90 0 -180)
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -3097,14 +3037,14 @@
 			)
 		)
 	)
-	(footprint "SamacSys_Parts:ASMWL300AFH0E"
+	(footprint "SamacSys_Parts:ASMWLL00NKM0E"
 		(layer "F.Cu")
 		(uuid "eb847f3b-ad06-4517-8f97-4dd572e8c00a")
 		(at 174.757 78.232 180)
-		(descr "ASMW-L300-AFH0E-2")
+		(descr "ASMW-LL00-NKM0E-2")
 		(tags "LED")
 		(property "Reference" "LED8"
-			(at 0 0 0)
+			(at 0 0 180)
 			(layer "F.SilkS")
 			(uuid "d6a66efe-1f9a-4e64-8914-6f5986c86949")
 			(effects
@@ -3115,7 +3055,7 @@
 			)
 		)
 		(property "Value" "ASMW-LD00-AGJ0E"
-			(at 0 0 0)
+			(at 0 0 180)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "7bdb1d57-71a7-49b8-bbcb-0fcf6b3a3ac2")
@@ -3127,7 +3067,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.de/datasheet/2/678/Broadcom_01_02_2020_ASMW_LD00_AGJ0E_ASMW_L300_AFH0-1892072.pdf"
-			(at 0 0 0)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a0379bdf-32cc-4a09-b225-03648c592f3d")
@@ -3139,7 +3079,7 @@
 			)
 		)
 		(property "Description" "High Power LEDs - Single Colour Horticulture 0.5W 2835 Surface Mount LED"
-			(at 0 0 0)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f9b85c74-0fce-4160-953f-1c3e13fd2258")
@@ -3155,7 +3095,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "03de1b7d-ac42-4463-a285-1e16addc326d")
+			(uuid "d0319f7f-b48a-4a7b-a19d-b17153c87b04")
 			(effects
 				(font
 					(size 1 1)
@@ -3168,7 +3108,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "26a9ef89-22e1-45d1-8176-f85e057ac2f3")
+			(uuid "cad36f6c-76ce-4d2e-b4f5-fb2ca0dd0546")
 			(effects
 				(font
 					(size 1 1)
@@ -3181,7 +3121,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d31e8729-7132-4072-982d-97b5ce97f30e")
+			(uuid "7b747459-9f74-431b-a899-c55c3408f3d2")
 			(effects
 				(font
 					(size 1 1)
@@ -3194,7 +3134,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1729d84f-fe91-4301-8f12-67d563e35eb5")
+			(uuid "a831c24c-f290-4651-82d9-18e763610e3d")
 			(effects
 				(font
 					(size 1 1)
@@ -3207,7 +3147,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "23356f61-97a2-4553-823d-ae73a074f430")
+			(uuid "dfe38b71-b668-472f-ab37-8a5efa7b0cf2")
 			(effects
 				(font
 					(size 1 1)
@@ -3227,7 +3167,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "31a935b7-d768-4305-8dea-0271d6560316")
+			(uuid "c367f86e-fb6a-4a97-96e5-8870c3281cb1")
 		)
 		(fp_line
 			(start 2.7 0)
@@ -3237,27 +3177,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "ff349c57-b031-43e8-a746-b56f3183b1c4")
-		)
-		(fp_line
-			(start -1.75 1.4)
-			(end 1.75 1.4)
-			(stroke
-				(width 0.2)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "a9d635e9-30f1-4131-8ead-46a8f37bc3e7")
-		)
-		(fp_line
-			(start -1.75 -1.4)
-			(end 1.75 -1.4)
-			(stroke
-				(width 0.2)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "7b57265e-d2a0-45f0-b63c-5628e15559b9")
+			(uuid "fbb1e0c0-3904-470b-9110-0b12921a1659")
 		)
 		(fp_arc
 			(start 2.8 0)
@@ -3268,7 +3188,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "9c7ff19c-ad94-4955-9a59-0dcd4e741003")
+			(uuid "6ae7c465-6a02-429a-a52b-eac0acfa4842")
 		)
 		(fp_arc
 			(start 2.7 0)
@@ -3279,7 +3199,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "bb5c75ec-8701-4263-a2a6-6d9b5f70ec76")
+			(uuid "71bfbf32-6955-449c-a23e-6b009dbcfa14")
 		)
 		(fp_line
 			(start 3.25 2.4)
@@ -3289,7 +3209,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "f9320ad9-0d51-4df8-ab0a-5157e7b4f5cd")
+			(uuid "ae8d5c0b-8f39-4d64-8d14-51d2dbfd4fc6")
 		)
 		(fp_line
 			(start 3.25 -2.4)
@@ -3299,7 +3219,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "bdc02bb5-d873-435b-a21f-ce71a05f49e5")
+			(uuid "32dfc378-fca4-484e-a3ba-bc14d254888f")
 		)
 		(fp_line
 			(start -3.25 2.4)
@@ -3309,7 +3229,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "1e8927c9-f2b6-4ec3-8c62-883e3d0284e1")
+			(uuid "a1cfea65-5a16-4ebf-802b-e67091c6831e")
 		)
 		(fp_line
 			(start -3.25 -2.4)
@@ -3319,7 +3239,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "1343a13b-4b58-42b8-9b0f-06165a675718")
+			(uuid "b084803f-b4dd-4387-bd9f-1cb20b90b351")
 		)
 		(fp_line
 			(start 1.75 1.4)
@@ -3329,7 +3249,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "a2f79d3d-660d-4382-97dc-db608fc0a1dd")
+			(uuid "5c1c38c4-e0ae-4dc5-9303-c28b21d4eb75")
 		)
 		(fp_line
 			(start 1.75 -1.4)
@@ -3339,7 +3259,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "2ce46ce6-2709-40f3-b6b6-f8eacdaaa684")
+			(uuid "5a2ed3a7-ff9b-4511-8964-7dcc4ebead59")
 		)
 		(fp_line
 			(start -1.75 1.4)
@@ -3349,7 +3269,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "ecc6bb92-8257-48a7-89b7-f135dc208935")
+			(uuid "829cd83a-3d89-4f3c-97b0-ac3b6d2dccb4")
 		)
 		(fp_line
 			(start -1.75 -1.4)
@@ -3359,10 +3279,10 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "6c5dfd00-61a6-4b62-ae9b-923c4995f88b")
+			(uuid "829572f6-38a4-4bbc-9013-5d26b2e172e6")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(uuid "19b8a27a-bce1-4980-8466-5b9c51f01f69")
 			(effects
@@ -3373,8 +3293,8 @@
 			)
 		)
 		(pad "1" smd rect
-			(at 1.54 0 180)
-			(size 1.42 2.1)
+			(at 1.005 0 270)
+			(size 2.1 2.49)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 10 "Net-(LED7-K)")
 			(pinfunction "A")
@@ -3382,8 +3302,8 @@
 			(uuid "735ec220-dcbc-4fc2-9fb0-7343191ad217")
 		)
 		(pad "2" smd rect
-			(at -1.005 0 270)
-			(size 2.1 2.49)
+			(at -1.54 0 180)
+			(size 1.42 2.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 6 "Net-(LED2-A)")
 			(pinfunction "K")
@@ -3391,7 +3311,7 @@
 			(uuid "15977469-e103-4dbc-9fac-2ef033435ed8")
 		)
 		(embedded_fonts no)
-		(model "C:\\Users\\Anjal\\ECE-445-Project\\boards\\libraries\\SamacSys_Parts.3dshapes\\ASMW-L300-AFH0E.stp"
+		(model "C:\\Users\\Anjal\\ECE-445-Project\\boards\\libraries\\SamacSys_Parts.3dshapes\\ASMW-LL00-NKM0E.stp"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3399,15 +3319,15 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -90 0 -180)
+				(xyz 0 0 0)
 			)
 		)
 	)
-	(footprint "SamacSys_Parts:ASMWL300AFH0E"
+	(footprint "SamacSys_Parts:ASMWLL00NKM0E"
 		(layer "F.Cu")
 		(uuid "f6c7e03a-bbb1-497c-9635-ac5fd18bd85e")
 		(at 174.736 96.266)
-		(descr "ASMW-L300-AFH0E-2")
+		(descr "ASMW-LL00-NKM0E-2")
 		(tags "LED")
 		(property "Reference" "LED2"
 			(at 0 0 0)
@@ -3461,7 +3381,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "42a60229-62c1-4132-98ef-1dbb905d9572")
+			(uuid "9e8734ac-9276-456b-ac9d-ceb4c80baeb2")
 			(effects
 				(font
 					(size 1 1)
@@ -3474,7 +3394,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2d2d5501-5290-4ab6-b079-6e30f17d2f37")
+			(uuid "9b3a4474-0750-4b68-8f81-27b0fe7dbb9c")
 			(effects
 				(font
 					(size 1 1)
@@ -3487,7 +3407,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1e2c13a7-338a-4bcb-8e5a-a408d59653ec")
+			(uuid "00ee7e87-416c-4494-8407-fa83b4fd4750")
 			(effects
 				(font
 					(size 1 1)
@@ -3500,7 +3420,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "31db5c3a-9d54-4186-a68d-eea3285d3409")
+			(uuid "9de9393b-eaca-4ee0-8ebf-24acaf25fd4b")
 			(effects
 				(font
 					(size 1 1)
@@ -3513,7 +3433,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4ebaf8b3-cc45-4eb7-bd14-ee9569a08213")
+			(uuid "1186e673-89ee-45e5-b465-151e2140cf91")
 			(effects
 				(font
 					(size 1 1)
@@ -3526,26 +3446,6 @@
 		(sheetfile "grow_lights.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -1.75 -1.4)
-			(end 1.75 -1.4)
-			(stroke
-				(width 0.2)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "40d72ac9-f412-4194-9017-4fbbbfc4f1dc")
-		)
-		(fp_line
-			(start -1.75 1.4)
-			(end 1.75 1.4)
-			(stroke
-				(width 0.2)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "bf654a8c-a0c2-4bfd-9a8d-c6910bae3ceb")
-		)
-		(fp_line
 			(start 2.7 0)
 			(end 2.7 0)
 			(stroke
@@ -3553,7 +3453,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "48fcd12a-1cc5-4deb-bcda-8d5ebf9a9167")
+			(uuid "72d981e8-b2f6-4ded-a513-7564dbdd4303")
 		)
 		(fp_line
 			(start 2.8 0)
@@ -3563,7 +3463,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "ff3f96b1-38be-4595-b7a2-090a807b08e3")
+			(uuid "050894fc-2cdc-4dee-812d-4978c65e9a88")
 		)
 		(fp_arc
 			(start 2.7 0)
@@ -3574,7 +3474,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "91f35ce2-d0a9-44d4-b589-e4264b0292c2")
+			(uuid "f6165ba7-5f51-411b-ac77-5ff747b8fc44")
 		)
 		(fp_arc
 			(start 2.8 0)
@@ -3585,7 +3485,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "a6705184-25de-41a5-8275-59f80978cb0d")
+			(uuid "052f504a-9460-4cf9-82a1-31c34134505b")
 		)
 		(fp_line
 			(start -3.25 -2.4)
@@ -3595,7 +3495,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "e7a96df3-0e28-4e5e-bdf1-c48bd81f2e24")
+			(uuid "66429443-8078-4381-bf73-45554f16e9f0")
 		)
 		(fp_line
 			(start -3.25 2.4)
@@ -3605,7 +3505,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "7ca92c9a-1009-44fa-b818-02a4f97db186")
+			(uuid "51f7e194-98c3-42fd-b9ae-2c8a6bbef610")
 		)
 		(fp_line
 			(start 3.25 -2.4)
@@ -3615,7 +3515,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "7a59d19a-a2db-4f69-992a-d6f0cf6190f3")
+			(uuid "34cabe14-f2a3-4f96-afad-579e07518d60")
 		)
 		(fp_line
 			(start 3.25 2.4)
@@ -3625,7 +3525,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "96c98206-97fe-422a-9047-ed50a498fd05")
+			(uuid "4233e4be-d163-422d-a9e8-8f9ee181a911")
 		)
 		(fp_line
 			(start -1.75 -1.4)
@@ -3635,7 +3535,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "d56d4d74-5924-430d-93a9-b2482da78287")
+			(uuid "29b56063-65e4-4cff-991f-d4133e19d359")
 		)
 		(fp_line
 			(start -1.75 1.4)
@@ -3645,7 +3545,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "70097517-e975-4df7-80dc-c95dba1b0357")
+			(uuid "e94400c7-18de-4e22-b41d-4c5136347cfd")
 		)
 		(fp_line
 			(start 1.75 -1.4)
@@ -3655,7 +3555,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "a9a70d80-a9a2-48dc-a842-35d72d1e648e")
+			(uuid "dd40fa38-69bf-4554-b989-fb092801ccd2")
 		)
 		(fp_line
 			(start 1.75 1.4)
@@ -3665,7 +3565,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "008039e5-4025-425d-9a4f-481b88248425")
+			(uuid "15d4c7ae-4dc9-4311-bcad-8f21f57cc8ed")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 0 0)
@@ -3679,8 +3579,8 @@
 			)
 		)
 		(pad "1" smd rect
-			(at 1.54 0)
-			(size 1.42 2.1)
+			(at 1.005 0 90)
+			(size 2.1 2.49)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 6 "Net-(LED2-A)")
 			(pinfunction "A")
@@ -3688,8 +3588,8 @@
 			(uuid "e3fda9c3-8054-4bc9-a18a-93c7b3cf9ec9")
 		)
 		(pad "2" smd rect
-			(at -1.005 0 90)
-			(size 2.1 2.49)
+			(at -1.54 0)
+			(size 1.42 2.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 5 "Net-(LED2-K)")
 			(pinfunction "K")
@@ -3697,7 +3597,7 @@
 			(uuid "0ded0877-4e96-4f62-b235-c523a1fbb6a0")
 		)
 		(embedded_fonts no)
-		(model "C:\\Users\\Anjal\\ECE-445-Project\\boards\\libraries\\SamacSys_Parts.3dshapes\\ASMW-L300-AFH0E.stp"
+		(model "C:\\Users\\Anjal\\ECE-445-Project\\boards\\libraries\\SamacSys_Parts.3dshapes\\ASMW-LL00-NKM0E.stp"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3705,7 +3605,7 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -90 0 -180)
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -3720,7 +3620,7 @@
 		(layer "Edge.Cuts")
 		(uuid "1c9451b2-4dc0-45ba-8694-5be54c72ca9f")
 	)
-	(gr_text "Team 73 \nCircle of Life LED V1"
+	(gr_text "Team 73 \nCircle of Life LED V4"
 		(at 135.89 109.22 0)
 		(layer "F.SilkS")
 		(uuid "e4b50214-8c51-4e01-9998-c9e096c47770")
@@ -3783,20 +3683,20 @@
 		(uuid "ce1d807c-b31b-438b-aa4d-0e73f807288b")
 	)
 	(segment
+		(start 145.002 96.266)
+		(end 120.158 96.266)
+		(width 1.3)
+		(layer "F.Cu")
+		(net 3)
+		(uuid "a14a765e-e391-405c-abc2-3e1a8978d8c6")
+	)
+	(segment
 		(start 120.158 96.266)
 		(end 119.396 97.028)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 3)
-		(uuid "dc4720b7-ec0f-4bd7-9f8a-f0ca2edf62cb")
-	)
-	(segment
-		(start 145.537 96.266)
-		(end 120.158 96.266)
-		(width 1.3)
-		(layer "F.Cu")
-		(net 3)
-		(uuid "e6e455c3-334c-4d3f-8a8b-6f328cd401f0")
+		(uuid "b67474ed-45e2-4cdd-b75e-d4d09ecf0a31")
 	)
 	(segment
 		(start 116.851 117.829)
@@ -3815,20 +3715,20 @@
 		(uuid "e2a6759e-8939-4cba-b1d8-6e1afdd49e3a")
 	)
 	(segment
-		(start 173.731 96.266)
-		(end 148.082 96.266)
-		(width 1.3)
-		(layer "F.Cu")
-		(net 5)
-		(uuid "15eb416c-ac8c-401f-8f40-af6b5e1f376f")
-	)
-	(segment
 		(start 148.098 96.012)
 		(end 147.844 96.266)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 5)
 		(uuid "cc0e2997-9595-446f-90df-96939e56eb36")
+	)
+	(segment
+		(start 173.196 96.266)
+		(end 147.547 96.266)
+		(width 1.3)
+		(layer "F.Cu")
+		(net 5)
+		(uuid "ee1247b2-201b-4b86-98d3-64d1aed0364c")
 	)
 	(segment
 		(start 175.762 95.752)
@@ -3840,19 +3740,27 @@
 	)
 	(segment
 		(start 175.762 78.232)
-		(end 175.762 95.752)
-		(width 1.3)
-		(layer "F.Cu")
-		(net 6)
-		(uuid "2cde3910-d204-4ef9-ab89-bd80f0cd23b8")
-	)
-	(segment
-		(start 175.762 78.232)
 		(end 176.276 78.746)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 6)
 		(uuid "465bed27-5748-4c4d-a699-e6a52e1e987e")
+	)
+	(segment
+		(start 176.297 95.71)
+		(end 175.741 96.266)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 6)
+		(uuid "ea2e6632-928f-4aca-b7d4-3737832f86aa")
+	)
+	(segment
+		(start 176.297 78.232)
+		(end 176.297 95.71)
+		(width 1.3)
+		(layer "F.Cu")
+		(net 6)
+		(uuid "ff09fe9b-1dbb-468e-8ef3-44b56c2be3b9")
 	)
 	(segment
 		(start 146.045 117.856)
@@ -3887,12 +3795,20 @@
 		(uuid "ddc83557-3674-4cdb-9489-1defa8e424b1")
 	)
 	(segment
-		(start 119.623 77.216)
-		(end 145.029 77.216)
+		(start 120.412 77.47)
+		(end 145.818 77.47)
 		(width 1.3)
 		(layer "F.Cu")
 		(net 9)
-		(uuid "e07e9db3-7519-4c12-930b-1b8cb1439db7")
+		(uuid "2616fa74-2c5c-4054-a3d9-681bb1aa94f2")
+	)
+	(segment
+		(start 120.158 77.216)
+		(end 120.412 77.47)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 9)
+		(uuid "a5cb8f19-a6c5-4a65-a53d-00d1ab08730a")
 	)
 	(segment
 		(start 145.029 77.216)
@@ -3901,6 +3817,14 @@
 		(layer "F.Cu")
 		(net 9)
 		(uuid "fd760d47-4036-4a80-87dd-bc278878ec3c")
+	)
+	(segment
+		(start 172.99 77.47)
+		(end 173.752 78.232)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 10)
+		(uuid "58be806c-8978-40f9-91d9-f70598d73ea7")
 	)
 	(segment
 		(start 147.828 77.47)
@@ -3919,12 +3843,12 @@
 		(uuid "7d06aec9-171c-46de-8bac-d2e8a8632bb0")
 	)
 	(segment
-		(start 147.828 77.47)
-		(end 172.455 77.47)
+		(start 148.363 77.47)
+		(end 172.99 77.47)
 		(width 1.3)
 		(layer "F.Cu")
 		(net 10)
-		(uuid "9952dccd-7a48-485b-a4f1-b8ce6291de24")
+		(uuid "c4ed7b9b-41b6-43e0-9d36-0332a9418cbf")
 	)
 	(segment
 		(start 175.26 118.364)
