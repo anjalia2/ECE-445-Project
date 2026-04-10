@@ -3,7 +3,7 @@
 #include <DallasTemperature.h>
 
 #define arrayLength 40
-#define ONE_WIRE_BUS 35
+#define ONE_WIRE_BUS 19
 
 OneWire oneWire(ONE_WIRE_BUS);
 DallasTemperature sensors(&oneWire);
@@ -37,9 +37,10 @@ float voltage, pHValue;
 int time_limit = 30 * 1000; 
 int time_limit_ph = 5 * 10;
 int time_limit_flow = 5 * 1000;
+int time_limit_temp = 5 * 1000;
 int time_limit_ph_print = 5 * 1000;
 unsigned long last_rotation = 0;
-unsigned long current, last_ph, last_flow, last_ph_print;
+unsigned long current, last_ph, last_flow, last_ph_print, last_temp;
 
 int lastHallState = HIGH;
 int NbTopsFan = 0;
@@ -103,28 +104,20 @@ void setup() {
 	last_ph = millis();
 	last_flow = millis();
 	last_ph_print = millis();
+	last_temp = millis();
 
 	//AISHWARYA'S LED CODE
   //ledcAttach(ledPin, 5000, 8);
 	pinMode(ledPin, OUTPUT);
   startLedSeq = millis(); //start time of the led seq initially
-
+	//startIntensity = 155;//for estela's test
 	Serial.begin(9600);
 	sensors.begin();
 }
  
 void loop() {
 
-	// sensors.requestTemperatures(); 
-   
-  // delay(750);
-   
-  // float tempC = sensors.getTempCByIndex(0);
-  // Serial.print("Temperature: ");
-  // Serial.print(tempC);
-  // Serial.println("°C");
-	// Serial.println(sensors.getDeviceCount());
-  //delay(1000);
+	sensors.requestTemperatures(); 
 
 
 	current = millis();
@@ -142,6 +135,16 @@ void loop() {
 		}
 		last_rotation = millis();
 		servo_on = false;
+ }
+
+ if(current - last_temp >= time_limit_temp){
+	float tempC = sensors.getTempCByIndex(0);
+  Serial.print("Temperature: ");
+	tempC = tempC * 1.8;
+	tempC = tempC + 32;
+  Serial.print(tempC);
+  Serial.println("°F");
+	last_temp = millis();
  }
 
  if(current - last_ph_print >= time_limit_ph_print){
@@ -209,6 +212,12 @@ void loop() {
     // }
     // ledcWrite(0,intensity);
 		//ledcWrite(0, HIGH);
-		digitalWrite(ledPin, HIGH);
+		//estela's test
+		// if (intensity > 0) {
+    //     intensity -= 10;
+    //     if (intensity < 0) intensity = 0;
+    // }
+    // delay(1000); // optional so you can see it step down
+		// ledcWrite(ledPin, intensity);
 
 }
