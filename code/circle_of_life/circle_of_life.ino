@@ -16,6 +16,12 @@ int servoPin = 26;
 int phPin = 32;
 int flowPin = 25;
 int phFaultPin = 33;
+int pumpPin = 27; //water pump pin
+
+
+//Water pump code
+int dutyCycle = 179;
+
 
 //AISHWARYA'S LED CODE
 int ledPin = 18;
@@ -40,7 +46,7 @@ int time_limit_flow = 5 * 1000;
 int time_limit_temp = 5 * 1000;
 int time_limit_ph_print = 5 * 1000;
 unsigned long last_rotation = 0;
-unsigned long current, last_ph, last_flow, last_ph_print, last_temp;
+unsigned long current, last_ph, last_flow, last_ph_print, last_temp, start_time;
 
 int lastHallState = HIGH;
 int NbTopsFan = 0;
@@ -111,8 +117,12 @@ void setup() {
 	pinMode(ledPin, OUTPUT);
   startLedSeq = millis(); //start time of the led seq initially
 	//startIntensity = 155;//for estela's test
+	
+
+  ledcAttachChannel(pumpPin, 1000, 8, 6);
 	Serial.begin(9600);
 	sensors.begin();
+	sensors.setWaitForConversion(false);
 }
  
 void loop() {
@@ -176,6 +186,15 @@ void loop() {
 			NbTopsFan++;
 		}
 		lastHallState = hallState;
+		if(current - start_time <= 30000){
+			ledcWrite(pumpPin, dutyCycle);
+  	} else if(current - start_time <= 60000){
+			dutyCycle = 102;
+			ledcWrite(pumpPin, dutyCycle);
+  	} else{
+			dutyCycle = 0;
+			ledcWrite(pumpPin, dutyCycle);
+  	}
 	}
 
 	if(current - last_flow >= time_limit_flow) {
@@ -187,6 +206,9 @@ void loop() {
 					Serial.println(" L/hour");
 					last_flow = millis();
 	}
+  //Serial.print("Flow rate is:");
+  //Serial.println(flowRate); //do we need to recalc flowRate immediately? flowRate is just the reading.
+
 
 	//AISHWARYA'S LED CODE
 
