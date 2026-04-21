@@ -16,21 +16,18 @@ int servoPin = 26;
 int phPin = 32;
 int flowPin = 25;
 int phFaultPin = 33;
+int flowFaultPin = 14 ;
+int tempFaultPin = 12 ;
 int pumpPin = 27; //water pump pin
+int ledPin = 15;
 
 
 //Water pump code
-int dutyCycle = 179;
+int dutyCycle = 0;
+int max_flow = 350;
+int min_flow = 300;
 
-
-//AISHWARYA'S LED CODE
-int ledPin = 18;
-unsigned long startLedSeq = 0;
-unsigned long sunrise = 10000; //some default vals
-unsigned long dayLength = 15000;
-unsigned long sunset = 10000;
-unsigned long nightLength = 15000;
-
+int dutyCycleLeds = 125;
 
 int pos = 0; 
 bool servo_on = false;
@@ -106,17 +103,16 @@ void setup() {
 	myservo.attach(servoPin, 500, 2400);
 	pinMode(flowPin, INPUT_PULLUP);
 	pinMode(phFaultPin, OUTPUT);
+	pinMode(flowFaultPin, OUTPUT);
+	pinMode(tempFaultPin, OUTPUT);
 	last_rotation = millis();
 	last_ph = millis();
 	last_flow = millis();
 	last_ph_print = millis();
 	last_temp = millis();
+	start_time = millis();
 
-	//AISHWARYA'S LED CODE
-  //ledcAttach(ledPin, 5000, 8);
-	pinMode(ledPin, OUTPUT);
-  startLedSeq = millis(); //start time of the led seq initially
-	//startIntensity = 155;//for estela's test
+  ledcAttachChannel(ledPin, 1000, 8,7);
 	
 
   ledcAttachChannel(pumpPin, 1000, 8, 6);
@@ -155,6 +151,13 @@ void loop() {
   Serial.print(tempC);
   Serial.println("°F");
 	last_temp = millis();
+	if(tempC < 70 || tempC > 85){
+			digitalWrite(tempFaultPin, HIGH);
+			Serial.println("temp fault LED ON");
+		} else {
+			digitalWrite(tempFaultPin, LOW);
+			Serial.println("temp fault LED OFF");
+		}
  }
 
  if(current - last_ph_print >= time_limit_ph_print){
@@ -163,7 +166,7 @@ void loop() {
 		Serial.print(" pH value: ");
 		Serial.println(pHValue,2);
 		last_ph_print = millis();
-		if(pHValue < 5 || pHValue > 8){
+		if(pHValue < 6 || pHValue > 8){
 			digitalWrite(phFaultPin, HIGH);
 			Serial.println("pH fault LED ON");
 		} else {
@@ -186,15 +189,29 @@ void loop() {
 			NbTopsFan++;
 		}
 		lastHallState = hallState;
+
+		//water pump
 		if(current - start_time <= 30000){
-			ledcWrite(pumpPin, dutyCycle);
-  	} else if(current - start_time <= 60000){
-			dutyCycle = 102;
-			ledcWrite(pumpPin, dutyCycle);
-  	} else{
 			dutyCycle = 0;
 			ledcWrite(pumpPin, dutyCycle);
-  	}
+		}
+		else if (flowRate < min_flow || flowRate > max_flow) {
+			dutyCycle = 25;
+			ledcWrite(pumpPin, dutyCycle);
+		}
+
+		//led driver
+		if(current - start_time <= 20000){
+    ledcWrite(ledPin, dutyCycleLeds);
+  } else if (current - start_time <= 40000){
+    dutyCycleLeds = 67;
+    ledcWrite(ledPin, dutyCycleLeds);
+  } 
+	else {
+    dutyCycleLeds = 0;
+    ledcWrite(ledPin, dutyCycleLeds);
+  }
+
 	}
 
 	if(current - last_flow >= time_limit_flow) {
@@ -205,41 +222,15 @@ void loop() {
 					Serial.print(flowRate);
 					Serial.println(" L/hour");
 					last_flow = millis();
+		if(flowRate < 200 || flowRate > 800){
+			digitalWrite(flowFaultPin, HIGH);
+			Serial.println("flow fault LED ON");
+		} else {
+			digitalWrite(flowFaultPin, LOW);
+			Serial.println("flow fault LED OFF");
+		}
 	}
-  //Serial.print("Flow rate is:");
-  //Serial.println(flowRate); //do we need to recalc flowRate immediately? flowRate is just the reading.
 
-
-	//AISHWARYA'S LED CODE
-
-    // int pwmMin = 75;
-    // int pwmMax = 155;
-    // if(current - startLedSeq >= sunrise + dayLength + sunset + nightLength){
-    //     startLedSeq = millis(); //start a new sequence now
-    // }
-    // int intensity; //light brightness
-    // if(current - startLedSeq < sunrise){
-    //     //start sunrise
-    //     intensity = (current - startLedSeq)*(pwmMax - pwmMin)/sunrise; //increase brightness with time until reach daytime brightness
-    // }
-    // else if(current - startLedSeq < sunrise + dayLength){ //daytime
-    //     intensity = 155;
-    // }
-    // else if(current - startLedSeq < sunrise + dayLength + sunset){
-    //     unsigned long timeSunset = (current - startLedSeq) - (sunrise + dayLength);
-    //     intensity = -1*((timeSunset)*(pwmMax - pwmMin)/sunset) + pwmMax;
-    // }
-    // else{
-    //     intensity = 75;
-    // }
-    // ledcWrite(0,intensity);
-		//ledcWrite(0, HIGH);
-		//estela's test
-		// if (intensity > 0) {
-    //     intensity -= 10;
-    //     if (intensity < 0) intensity = 0;
-    // }
-    // delay(1000); // optional so you can see it step down
-		// ledcWrite(ledPin, intensity);
+		
 
 }
