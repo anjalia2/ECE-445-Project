@@ -2,7 +2,7 @@
 #include <OneWire.h>
 #include <DallasTemperature.h>
 
-#define arrayLength 40
+#define arrayLength 100
 #define ONE_WIRE_BUS 19
 
 OneWire oneWire(ONE_WIRE_BUS);
@@ -19,7 +19,7 @@ int phFaultPin = 33;
 int flowFaultPin = 14 ;
 int tempFaultPin = 12 ;
 int pumpPin = 27; //water pump pin
-int ledPin = 15;
+int ledPin = 13;
 
 
 //Water pump code
@@ -32,7 +32,7 @@ int dutyCycleLeds = 125;
 int pos = 0; 
 bool servo_on = false;
 
-int offset = 2.19;
+float offset = 2.19;
 int pHArray[arrayLength]; 
 int pHArrayIndex = 0;
 float voltage, pHValue;
@@ -112,7 +112,8 @@ void setup() {
 	last_temp = millis();
 	start_time = millis();
 
-  ledcAttachChannel(ledPin, 1000, 8,7);
+  ledcAttachChannel(ledPin, 3000, 8,7);
+	analogSetPinAttenuation(phPin, ADC_2_5db); // better linearity below ~1.5V
 	
 
   ledcAttachChannel(pumpPin, 1000, 8, 6);
@@ -201,16 +202,40 @@ void loop() {
 		}
 
 		//led driver
-		if(current - start_time <= 20000){
-    ledcWrite(ledPin, dutyCycleLeds);
-  } else if (current - start_time <= 40000){
-    dutyCycleLeds = 67;
-    ledcWrite(ledPin, dutyCycleLeds);
-  } 
-	else {
-    dutyCycleLeds = 0;
-    ledcWrite(ledPin, dutyCycleLeds);
-  }
+	// 	if(current - start_time <= 20000){
+  //   ledcWrite(ledPin, dutyCycleLeds);
+  // } else if (current - start_time <= 40000){
+  //   dutyCycleLeds = 67;
+  //   ledcWrite(ledPin, dutyCycleLeds);
+  // } 
+	// else {
+  //   dutyCycleLeds = 0;
+  //   ledcWrite(ledPin, dutyCycleLeds);
+  // }
+
+	//led driver
+        if(current - start_time <= 15000){ //first 15 seconds are night
+            dutyCycleLeds = 0;
+            ledcWrite(ledPin, dutyCycleLeds); //starts off at 0
+        } else if (current - start_time <= 30000){ //sunrise
+            uint32_t sunrise_covered = current - start_time - 15000;
+            dutyCycleLeds = (uint8_t)(125UL * sunrise_covered / 15000);
+						delay(10);
+            ledcWrite(ledPin, dutyCycleLeds);
+        }
+        else if(current - start_time <= 45000){ //daytime
+            dutyCycleLeds = 125;
+            ledcWrite(ledPin, dutyCycleLeds);
+        }
+        else { //sunset
+            dutyCycleLeds = 0;
+            uint32_t sunset_covered = current - start_time - 45000;
+						start_time = millis();
+						delay(10);
+            dutyCycleLeds = (uint8_t)(125UL * sunset_covered / 15000);
+            ledcWrite(ledPin, dutyCycleLeds);
+        }
+
 
 	}
 
