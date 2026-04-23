@@ -214,28 +214,35 @@ void loop() {
   // }
 
 	//led driver
-        if(current - start_time <= 15000){ //first 15 seconds are night
-            dutyCycleLeds = 0;
-            ledcWrite(ledPin, dutyCycleLeds); //starts off at 0
-        } else if (current - start_time <= 30000){ //sunrise
-            uint32_t sunrise_covered = current - start_time - 15000;
-            dutyCycleLeds = (uint8_t)(125UL * sunrise_covered / 15000);
-						delay(10);
-            ledcWrite(ledPin, dutyCycleLeds);
-        }
-        else if(current - start_time <= 45000){ //daytime
-            dutyCycleLeds = 125;
-            ledcWrite(ledPin, dutyCycleLeds);
-        }
-        else { //sunset
-            dutyCycleLeds = 0;
-            uint32_t sunset_covered = current - start_time - 45000;
-						start_time = millis();
-						delay(10);
-            dutyCycleLeds = (uint8_t)(125UL * sunset_covered / 15000);
-            ledcWrite(ledPin, dutyCycleLeds);
-        }
-
+        if(current - start_time <= 15000)
+		{ //first 15 seconds are night
+			dutyCycleLeds = 0;
+			ledcWrite(ledPin, dutyCycleLeds); //starts off at 0
+		} 
+		else if (current - start_time <= 60000)
+		{ //sunrise
+			uint32_t sunrise_covered = current - start_time - 15000;
+			dutyCycleLeds = (uint8_t)(125.0f * sunrise_covered / 45000.0f);
+			ledcWrite(ledPin, dutyCycleLeds);
+    		
+		}
+		else if(current - start_time <= 75000)
+		{ //daytime
+			dutyCycleLeds = 125;
+			ledCWrite(ledPin, dutyCycleLeds);
+		}
+		else if(current - start_time <= 120000)
+		{ //sunset
+			dutyCycleLeds = 0;
+			uint32_t sunset_covered = current - start_time - 75000;
+			dutyCycleLeds = (uint8_t)(125.0f - (125.0f * sunset_covered / 45000.0f));
+			ledcWrite(ledPin, dutyCycleLeds);
+		}
+		else
+		{ //just in case
+			dutyCycleLeds = 0;
+			ledcWrite(ledPin, dutyCycleLeds);
+		}
 
 	}
 
