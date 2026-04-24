@@ -32,18 +32,20 @@ int dutyCycleLeds = 125;
 int pos = 0; 
 bool servo_on = false;
 
-float offset = 2.19;
+float offset = 1.00;
 int pHArray[arrayLength]; 
 int pHArrayIndex = 0;
-float voltage, pHValue;
+float voltage = 0;
+float pHValue = 0;
 
-int time_limit = 30 * 1000; 
+int time_limit = 60 * 1000; 
 int time_limit_ph = 5 * 10;
 int time_limit_flow = 5 * 1000;
 int time_limit_temp = 5 * 1000;
 int time_limit_ph_print = 5 * 1000;
 unsigned long last_rotation = 0;
 unsigned long current, last_ph, last_flow, last_ph_print, last_temp, start_time;
+float temp_for_ph = 0;
 
 int lastHallState = HIGH;
 int NbTopsFan = 0;
@@ -113,8 +115,7 @@ void setup() {
 	start_time = millis();
 
   ledcAttachChannel(ledPin, 3000, 8,7);
-	analogSetPinAttenuation(phPin, ADC_2_5db); // better linearity below ~1.5V
-	
+	analogSetPinAttenuation(phPin, ADC_11db); 
 
   ledcAttachChannel(pumpPin, 1000, 8, 6);
 	Serial.begin(9600);
@@ -146,6 +147,7 @@ void loop() {
 
  if(current - last_temp >= time_limit_temp){
 	float tempC = sensors.getTempCByIndex(0);
+	temp_for_ph = tempC;
   Serial.print("Temperature: ");
 	tempC = tempC * 1.8;
 	tempC = tempC + 32;
@@ -177,11 +179,23 @@ void loop() {
  }
 
  if(current - last_ph >= time_limit_ph){
-	  pHArray[pHArrayIndex++]=analogRead(phPin);
+	 	pHArray[pHArrayIndex++]=analogRead(phPin);
 		if(pHArrayIndex==arrayLength)pHArrayIndex=0;
-		voltage = averageArray(pHArray, arrayLength)*3.3/4096; // 4096 is 2^12 since ADC is 12 volts
-		pHValue = 3.5*voltage+offset;
-		last_ph = millis();
+		// voltage = (averageArray(pHArray, arrayLength)*3.3/4096 )* 1.515; // 4096 is 2^12 since ADC is 12 volts
+		// pHValue = 3.5*voltage+offset;
+		// pHValue = pHValue + (temp_for_ph - 25) * ((0.05916 * temp_for_ph)/298.15);
+		// last_ph = millis();
+
+		float rawAvg = averageArray(pHArray, arrayLength);
+    voltage = (rawAvg * 3.3 / 4096.0) * 1.515; 
+    float neutralVoltage = 0.77; 
+    float slope = 7.5; 
+    pHValue = (7.0 + (voltage - neutralVoltage) * slope) + offset;
+    if (pHValue < 0) pHValue = 0;
+    if (pHValue > 14) pHValue = 14;
+
+    last_ph = millis();
+
  }
 
 	if(!servo_on){
@@ -222,20 +236,20 @@ void loop() {
 		else if (current - start_time <= 60000)
 		{ //sunrise
 			uint32_t sunrise_covered = current - start_time - 15000;
-			dutyCycleLeds = (uint8_t)(125.0f * sunrise_covered / 45000.0f);
+			dutyCycleLeds = (uint8_t)(255.0f * sunrise_covered / 45000.0f);
 			ledcWrite(ledPin, dutyCycleLeds);
     		
 		}
 		else if(current - start_time <= 75000)
 		{ //daytime
-			dutyCycleLeds = 125;
-			ledCWrite(ledPin, dutyCycleLeds);
+			dutyCycleLeds = 255;
+			ledcWrite(ledPin, dutyCycleLeds);
 		}
 		else if(current - start_time <= 120000)
 		{ //sunset
 			dutyCycleLeds = 0;
 			uint32_t sunset_covered = current - start_time - 75000;
-			dutyCycleLeds = (uint8_t)(125.0f - (125.0f * sunset_covered / 45000.0f));
+			dutyCycleLeds = (uint8_t)(255.0f - (255.0f * sunset_covered / 45000.0f));
 			ledcWrite(ledPin, dutyCycleLeds);
 		}
 		else
