@@ -32,7 +32,7 @@ int dutyCycleLeds = 125;
 int pos = 0; 
 bool servo_on = false;
 
-float offset = 1.00;
+float offset = 0.00;
 int pHArray[arrayLength]; 
 int pHArrayIndex = 0;
 float voltage = 0;
@@ -44,7 +44,7 @@ int time_limit_flow = 5 * 1000;
 int time_limit_temp = 5 * 1000;
 int time_limit_ph_print = 5 * 1000;
 unsigned long last_rotation = 0;
-unsigned long current, last_ph, last_flow, last_ph_print, last_temp, start_time;
+unsigned long current, last_ph, last_flow, last_ph_print, last_temp, start_time, start_time_led;
 float temp_for_ph = 0;
 
 int lastHallState = HIGH;
@@ -113,11 +113,12 @@ void setup() {
 	last_ph_print = millis();
 	last_temp = millis();
 	start_time = millis();
+	start_time_led = millis();
 
   ledcAttachChannel(ledPin, 3000, 8,7);
 	analogSetPinAttenuation(phPin, ADC_11db); 
 
-  ledcAttachChannel(pumpPin, 1000, 8, 6);
+  ledcAttachChannel(pumpPin, 500, 8, 6);
 	Serial.begin(9600);
 	sensors.begin();
 	sensors.setWaitForConversion(false);
@@ -188,9 +189,10 @@ void loop() {
 
 		float rawAvg = averageArray(pHArray, arrayLength);
     voltage = (rawAvg * 3.3 / 4096.0) * 1.515; 
-    float neutralVoltage = 0.77; 
-    float slope = 7.5; 
+    float neutralVoltage = 1.9; 
+    float slope = 22.73; 
     pHValue = (7.0 + (voltage - neutralVoltage) * slope) + offset;
+		//pHValue = (voltage/3.3)*14;
     if (pHValue < 0) pHValue = 0;
     if (pHValue > 14) pHValue = 14;
 
@@ -210,45 +212,33 @@ void loop() {
 			dutyCycle = 0;
 			ledcWrite(pumpPin, dutyCycle);
 		}
-		else if (flowRate < min_flow || flowRate > max_flow) {
+		else if (flowRate < min_flow) {
 			dutyCycle = 25;
 			ledcWrite(pumpPin, dutyCycle);
 		}
 
-		//led driver
-	// 	if(current - start_time <= 20000){
-  //   ledcWrite(ledPin, dutyCycleLeds);
-  // } else if (current - start_time <= 40000){
-  //   dutyCycleLeds = 67;
-  //   ledcWrite(ledPin, dutyCycleLeds);
-  // } 
-	// else {
-  //   dutyCycleLeds = 0;
-  //   ledcWrite(ledPin, dutyCycleLeds);
-  // }
-
 	//led driver
-        if(current - start_time <= 15000)
+        if(current - start_time_led <= 15000)
 		{ //first 15 seconds are night
 			dutyCycleLeds = 0;
 			ledcWrite(ledPin, dutyCycleLeds); //starts off at 0
 		} 
-		else if (current - start_time <= 60000)
+		else if (current - start_time_led <= 60000)
 		{ //sunrise
-			uint32_t sunrise_covered = current - start_time - 15000;
+			uint32_t sunrise_covered = current - start_time_led - 15000;
 			dutyCycleLeds = (uint8_t)(255.0f * sunrise_covered / 45000.0f);
 			ledcWrite(ledPin, dutyCycleLeds);
     		
 		}
-		else if(current - start_time <= 75000)
+		else if(current - start_time_led <= 75000)
 		{ //daytime
 			dutyCycleLeds = 255;
 			ledcWrite(ledPin, dutyCycleLeds);
 		}
-		else if(current - start_time <= 120000)
+		else if(current - start_time_led <= 120000)
 		{ //sunset
 			dutyCycleLeds = 0;
-			uint32_t sunset_covered = current - start_time - 75000;
+			uint32_t sunset_covered = current - start_time_led - 75000;
 			dutyCycleLeds = (uint8_t)(255.0f - (255.0f * sunset_covered / 45000.0f));
 			ledcWrite(ledPin, dutyCycleLeds);
 		}
@@ -256,6 +246,7 @@ void loop() {
 		{ //just in case
 			dutyCycleLeds = 0;
 			ledcWrite(ledPin, dutyCycleLeds);
+			start_time_led = millis();
 		}
 
 	}
