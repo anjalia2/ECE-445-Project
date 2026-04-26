@@ -132,7 +132,7 @@ void loop() {
 	current = millis();
 	
   if(current - last_rotation >= time_limit){
-		Serial.println("rotation start");
+		//Serial.println("rotation start");
 		servo_on = true;
 		for (pos = 0; pos <= 180; pos += 1) {
 			myservo.write(pos); 
@@ -149,18 +149,19 @@ void loop() {
  if(current - last_temp >= time_limit_temp){
 	float tempC = sensors.getTempCByIndex(0);
 	temp_for_ph = tempC;
+	Serial.println("--------------------------------------------");
   Serial.print("Temperature: ");
 	tempC = tempC * 1.8;
 	tempC = tempC + 32;
   Serial.print(tempC);
   Serial.println("°F");
 	last_temp = millis();
-	if(tempC < 70 || tempC > 85){
+	if(tempC < 78 || tempC > 80){
 			digitalWrite(tempFaultPin, HIGH);
-			Serial.println("temp fault LED ON");
+			//Serial.println("temp fault LED ON");
 		} else {
 			digitalWrite(tempFaultPin, LOW);
-			Serial.println("temp fault LED OFF");
+			//Serial.println("temp fault LED OFF");
 		}
  }
 
@@ -172,10 +173,10 @@ void loop() {
 		last_ph_print = millis();
 		if(pHValue < 6 || pHValue > 8){
 			digitalWrite(phFaultPin, HIGH);
-			Serial.println("pH fault LED ON");
+			//Serial.println("pH fault LED ON");
 		} else {
 			digitalWrite(phFaultPin, LOW);
-			Serial.println("pH fault LED OFF");
+			//Serial.println("pH fault LED OFF");
 		}
  }
 
@@ -189,8 +190,8 @@ void loop() {
 
 		float rawAvg = averageArray(pHArray, arrayLength);
     voltage = (rawAvg * 3.3 / 4096.0) * 1.515; 
-    float neutralVoltage = 1.9; 
-    float slope = 22.73; 
+    float neutralVoltage = 1.86; 
+    float slope = 16.67; 
     pHValue = (7.0 + (voltage - neutralVoltage) * slope) + offset;
 		//pHValue = (voltage/3.3)*14;
     if (pHValue < 0) pHValue = 0;
@@ -259,12 +260,13 @@ void loop() {
 					Serial.print(flowRate);
 					Serial.println(" L/hour");
 					last_flow = millis();
+					Serial.println("--------------------------------------------");
 		if(flowRate < 200 || flowRate > 800){
 			digitalWrite(flowFaultPin, HIGH);
-			Serial.println("flow fault LED ON");
+			//Serial.println("flow fault LED ON");
 		} else {
 			digitalWrite(flowFaultPin, LOW);
-			Serial.println("flow fault LED OFF");
+			//Serial.println("flow fault LED OFF");
 		}
 	}
 
