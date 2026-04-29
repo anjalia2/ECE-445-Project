@@ -132,7 +132,7 @@ void loop() {
 	current = millis();
 	
   if(current - last_rotation >= time_limit){
-		//Serial.println("rotation start");
+		Serial.println("Fish feeder rotation started.");
 		servo_on = true;
 		for (pos = 0; pos <= 180; pos += 1) {
 			myservo.write(pos); 
@@ -190,7 +190,7 @@ void loop() {
 
 		float rawAvg = averageArray(pHArray, arrayLength);
     voltage = (rawAvg * 3.3 / 4096.0) * 1.515; 
-    float neutralVoltage = 1.86; 
+    float neutralVoltage = 1.91; 
     float slope = 16.67; 
     pHValue = (7.0 + (voltage - neutralVoltage) * slope) + offset;
 		//pHValue = (voltage/3.3)*14;
@@ -253,15 +253,15 @@ void loop() {
 	}
 
 	if(current - last_flow >= time_limit_flow) {
-			flowRate = (NbTopsFan * 60.0 / 7.5); //per min -- 7.5 calibration factor
+			flowRate = ((NbTopsFan / 5) * 60.0 / 7.5); //per min -- 7.5 calibration factor
 					NbTopsFan = 0;
 					last_flow = millis();
 					Serial.print("Flow rate: ");
 					Serial.print(flowRate);
-					Serial.println(" L/hour");
-					last_flow = millis();
+					Serial.println(" L/hr");
+					last_flow = current;
 					Serial.println("--------------------------------------------");
-		if(flowRate < 200 || flowRate > 800){
+		if(flowRate < 30){
 			digitalWrite(flowFaultPin, HIGH);
 			//Serial.println("flow fault LED ON");
 		} else {
