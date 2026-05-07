@@ -2,7 +2,7 @@
 
 ## January 20th, 2026
 
-##### The objective of today's session was to discuss project ideas of our group. 
+#### The objective of today's session was to discuss project ideas of our group. 
 
 We know that we have to each post our own project ideas on the web board, but we wanted all our ideas to be projects we would truly be interested in doing as a group, since whichever idea that gets approved by the professor would be the 
 project our group would end up doing. So, we each came up with our own project
@@ -102,7 +102,7 @@ As we continued to work on the PCB, we decided to split up the work to let every
 
 ## February 21st, 2026
 
-##### The objective of this session was to work on traces for the PCB design.
+### The objective of this session was to work on traces for the PCB design.
 
 Since Estela completed the schematic and Anjali and I finished assigning the footprints, I began drawing the traces on our PCB for the 5 Volt area of the PCB. Since there are components in our PCB which have different voltage needs, we have split the board into a 5 Volt area, a 3.3 Volt area, and a 12 Volt area. I ended up drawing the traces for the entire right top side of the board. This took quite a bit of effort as I was trying to make sure the traces were neat and not too long. I connected those parts and also added a separate ground plane for that area, since we want separate ground planes for that area and the 3.3 Volt area and the power area on the PCB board.
 ![Image description](images/Screenshot2026-03-01165308.png)
