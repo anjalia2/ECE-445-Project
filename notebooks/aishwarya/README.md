@@ -106,7 +106,9 @@ As we continued to work on the PCB, we decided to split up the work to let every
 
 Since Estela completed the schematic and Anjali and I finished assigning the footprints, I began drawing the traces on our PCB for the 5 Volt area of the PCB. Since there are components in our PCB which have different voltage needs, we have split the board into a 5 Volt area, a 3.3 Volt area, and a 12 Volt area. I ended up drawing the traces for the entire right top side of the board. This took quite a bit of effort as I was trying to make sure the traces were neat and not too long. I connected those parts and also added a separate ground plane for that area, since we want separate ground planes for that area and the 3.3 Volt area and the power area on the PCB board.
 ![Image description](images/Screenshot2026-03-01165308.png)
-  Figure 6: The initial traces for the first round PCB that I worked on.
+
+
+Figure 6: The initial traces for the first round PCB that I worked on.
 
 ## February 24th, 2026
 
