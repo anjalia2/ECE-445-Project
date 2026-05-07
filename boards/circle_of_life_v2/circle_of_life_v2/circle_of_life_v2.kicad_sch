@@ -2206,6 +2206,132 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:NetTie_2"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "NT"
+				(at 0 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "NetTie_2"
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Net tie, 2 pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "net tie short"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Net*Tie*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "NetTie_2_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "NetTie_2_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -8574,6 +8700,12 @@
 		(uuid "dc9264af-2106-4218-abfa-2567157095e0")
 	)
 	(junction
+		(at 153.67 180.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "df7736d0-3b63-4de5-8661-c4747842f982")
+	)
+	(junction
 		(at 341.63 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9011,6 +9143,16 @@
 	)
 	(wire
 		(pts
+			(xy 153.67 167.64) (xy 153.67 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cb129a6-7e61-4581-8f6f-65cdce503f43")
+	)
+	(wire
+		(pts
 			(xy 325.12 63.5) (xy 331.47 63.5)
 		)
 		(stroke
@@ -9058,16 +9200,6 @@
 			(type default)
 		)
 		(uuid "21eeb9e1-7d69-4d0d-926a-9fd5da23d9f2")
-	)
-	(wire
-		(pts
-			(xy 35.56 119.38) (xy 33.02 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "240338be-e433-4580-bc0d-f0fed5a80a7b")
 	)
 	(wire
 		(pts
@@ -9371,6 +9503,16 @@
 	)
 	(wire
 		(pts
+			(xy 153.67 177.8) (xy 153.67 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43f131c9-ba7a-44c4-83e4-164b4dc8d508")
+	)
+	(wire
+		(pts
 			(xy 297.18 55.88) (xy 297.18 60.96)
 		)
 		(stroke
@@ -9561,7 +9703,17 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 168.91) (xy 100.33 179.07)
+			(xy 123.19 180.34) (xy 125.73 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cb3ca6a-9595-462d-af4f-b29de45a4521")
+	)
+	(wire
+		(pts
+			(xy 100.33 168.91) (xy 100.33 172.72)
 		)
 		(stroke
 			(width 0)
@@ -9841,6 +9993,16 @@
 	)
 	(wire
 		(pts
+			(xy 115.57 180.34) (xy 118.11 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b9eddb5-64a6-41d2-9d12-e7c939968b8b")
+	)
+	(wire
+		(pts
 			(xy 306.07 154.94) (xy 316.23 154.94)
 		)
 		(stroke
@@ -9918,16 +10080,6 @@
 			(type default)
 		)
 		(uuid "81246424-163a-4c51-b99f-12b2ec401876")
-	)
-	(wire
-		(pts
-			(xy 33.02 137.16) (xy 33.02 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "81f30867-4a53-43d3-b364-dbf128c9ea92")
 	)
 	(wire
 		(pts
@@ -10381,6 +10533,16 @@
 	)
 	(wire
 		(pts
+			(xy 115.57 190.5) (xy 118.11 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfd8340f-c077-4c0c-9180-d1dad0059d7a")
+	)
+	(wire
+		(pts
 			(xy 242.57 111.76) (xy 255.27 111.76)
 		)
 		(stroke
@@ -10408,6 +10570,16 @@
 			(type default)
 		)
 		(uuid "c4b9c154-e30f-47b0-9661-b29f932b3de5")
+	)
+	(wire
+		(pts
+			(xy 123.19 190.5) (xy 125.73 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c673a1b4-1a1d-4bb6-aca1-b6c32878932c")
 	)
 	(wire
 		(pts
@@ -10631,16 +10803,6 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 119.38) (xy 33.02 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dfcb48cf-170d-42d9-9e0c-f171c2b098c7")
-	)
-	(wire
-		(pts
 			(xy 204.47 160.02) (xy 205.74 160.02)
 		)
 		(stroke
@@ -10721,7 +10883,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 186.69) (xy 100.33 189.23)
+			(xy 100.33 180.34) (xy 100.33 182.88)
 		)
 		(stroke
 			(width 0)
@@ -10902,28 +11064,6 @@
 		(uuid "004cb8a2-3c5e-47df-be8b-8a7e3079079d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 39.6942 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "IO0"
-		(shape input)
-		(at 35.56 119.38 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "02fca6fe-2fe5-4950-8809-498b54cd2743")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 41.69 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11243,7 +11383,7 @@
 	)
 	(global_label "IO0"
 		(shape input)
-		(at 153.67 180.34 90)
+		(at 153.67 180.34 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11253,7 +11393,7 @@
 		)
 		(uuid "557dbacd-38fd-40c7-8362-5ab40ac07789")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 153.67 174.21 90)
+			(at 159.8 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13674,76 +13814,6 @@
 			(project "circle_of_life_v2"
 				(path "/40aece87-2792-4b8f-8f9e-6a1fb3c4672a"
 					(reference "#PWR044")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 33.02 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0efab5b7-c7d3-40c9-b2a4-ae97cfec6a61")
-		(property "Reference" "R42"
-			(at 35.56 132.0799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 35.56 134.6199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "SamacSys_Parts:RESC1608X55N"
-			(at 31.242 133.35 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 33.02 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 33.02 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1b9351bc-ff23-43af-b553-9ae3057f3c4e")
-		)
-		(pin "2"
-			(uuid "2a9b0b1a-6a24-4cd0-92c6-881cf542cce2")
-		)
-		(instances
-			(project "circle_of_life_v2"
-				(path "/40aece87-2792-4b8f-8f9e-6a1fb3c4672a"
-					(reference "R42")
 					(unit 1)
 				)
 			)
@@ -16604,6 +16674,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 153.67 173.99 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "300bfdcd-2a89-4ee8-9bd2-07e39dc6fcdd")
+		(property "Reference" "R43"
+			(at 158.75 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 158.75 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 155.448 173.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 153.67 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3861b4bf-590a-47d7-b14f-f5473437b8bd")
+		)
+		(pin "1"
+			(uuid "3e8a6b3f-f43e-43ef-ab70-664747b4c615")
+		)
+		(instances
+			(project "circle_of_life_v2"
+				(path "/40aece87-2792-4b8f-8f9e-6a1fb3c4672a"
+					(reference "R43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 203.2 66.04 0)
 		(unit 1)
@@ -18223,7 +18360,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 100.33 182.88 0)
+		(at 100.33 176.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18232,7 +18369,7 @@
 		(fields_autoplaced yes)
 		(uuid "462f7b52-a257-4332-bf8c-d34bb21b24e6")
 		(property "Reference" "R40"
-			(at 102.87 181.6099 0)
+			(at 102.87 175.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18241,7 +18378,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 102.87 184.1499 0)
+			(at 102.87 177.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18250,7 +18387,7 @@
 			)
 		)
 		(property "Footprint" "SamacSys_Parts:RESC1608X55N"
-			(at 98.552 182.88 90)
+			(at 98.552 176.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18259,7 +18396,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 100.33 182.88 0)
+			(at 100.33 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18268,7 +18405,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 100.33 182.88 0)
+			(at 100.33 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18901,74 +19038,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:Jumper_2_Open")
-		(at 120.65 180.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "54485faa-670b-473b-b169-8d06bea0abb1")
-		(property "Reference" "JP1"
-			(at 120.65 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Jumper_2_Open"
-			(at 120.65 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
-			(at 120.65 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 120.65 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Jumper, 2-pole, open"
-			(at 120.65 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cf337dc3-257a-42d7-a5a1-97e771c4389a")
-		)
-		(pin "2"
-			(uuid "e9cffa52-f492-45c7-adee-2722a0bcb5ba")
-		)
-		(instances
-			(project "circle_of_life_v2"
-				(path "/40aece87-2792-4b8f-8f9e-6a1fb3c4672a"
-					(reference "JP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 86.36 82.55 0)
 		(unit 1)
@@ -19587,74 +19656,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:Jumper_2_Open")
-		(at 120.65 190.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "643abf53-4d2b-45a4-ae2f-291ced522356")
-		(property "Reference" "JP2"
-			(at 120.65 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Jumper_2_Open"
-			(at 120.65 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
-			(at 120.65 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 120.65 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Jumper, 2-pole, open"
-			(at 120.65 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4673d6c4-082c-4786-9acd-2b1172683ccf")
-		)
-		(pin "2"
-			(uuid "0371fae3-d558-4a9c-9176-be79f4e32b91")
-		)
-		(instances
-			(project "circle_of_life_v2"
-				(path "/40aece87-2792-4b8f-8f9e-6a1fb3c4672a"
-					(reference "JP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 226.06 66.04 0)
 		(unit 1)
@@ -20119,72 +20120,6 @@
 			(project "circle_of_life_v2"
 				(path "/40aece87-2792-4b8f-8f9e-6a1fb3c4672a"
 					(reference "C16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 33.02 139.7 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "714163f7-2359-4291-92f0-e3125b445a94")
-		(property "Reference" "#PWR076"
-			(at 33.02 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 33.02 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 33.02 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 33.02 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 33.02 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6fe5f63f-8ab6-455e-b29a-b7ae49d87633")
-		)
-		(instances
-			(project "circle_of_life_v2"
-				(path "/40aece87-2792-4b8f-8f9e-6a1fb3c4672a"
-					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -24509,6 +24444,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 153.67 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ad08599a-e546-42a2-a8cf-1de767aeebea")
+		(property "Reference" "#PWR078"
+			(at 153.67 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 153.67 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 153.67 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 153.67 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3a397c8f-4a8f-4b61-9cec-ab4dc34f0870")
+		)
+		(instances
+			(project "circle_of_life_v2"
+				(path "/40aece87-2792-4b8f-8f9e-6a1fb3c4672a"
+					(reference "#PWR078")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 21.59 256.54 0)
 		(unit 1)
@@ -26435,6 +26436,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 120.65 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c76927fd-5d46-403b-9ab4-4f98808549b6")
+		(property "Reference" "NT1"
+			(at 120.65 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 120.65 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
+			(at 120.65 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 120.65 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3d98d549-edbb-412d-a0de-e1ef0e348ae3")
+		)
+		(pin "2"
+			(uuid "75817d28-6e34-43ea-9069-50a317500d15")
+		)
+		(instances
+			(project ""
+				(path "/40aece87-2792-4b8f-8f9e-6a1fb3c4672a"
+					(reference "NT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 341.63 68.58 180)
 		(unit 1)
@@ -26840,7 +26909,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 100.33 189.23 0)
+		(at 100.33 182.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26849,7 +26918,7 @@
 		(fields_autoplaced yes)
 		(uuid "cecd871c-0c92-47fd-b0f4-3f2c58ef3981")
 		(property "Reference" "#PWR075"
-			(at 100.33 195.58 0)
+			(at 100.33 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26858,7 +26927,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 100.33 194.31 0)
+			(at 100.33 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26866,7 +26935,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 100.33 189.23 0)
+			(at 100.33 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26875,7 +26944,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 189.23 0)
+			(at 100.33 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26884,7 +26953,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 100.33 189.23 0)
+			(at 100.33 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28414,6 +28483,74 @@
 			(project "circle_of_life_v2"
 				(path "/40aece87-2792-4b8f-8f9e-6a1fb3c4672a"
 					(reference "#PWR077")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 120.65 190.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e2d6970c-2b9a-49e3-ad00-f89c88d8d912")
+		(property "Reference" "NT2"
+			(at 120.65 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 120.65 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
+			(at 120.65 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 120.65 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3d98d549-edbb-412d-a0de-e1ef0e348ae3")
+		)
+		(pin "2"
+			(uuid "75817d28-6e34-43ea-9069-50a317500d15")
+		)
+		(instances
+			(project ""
+				(path "/40aece87-2792-4b8f-8f9e-6a1fb3c4672a"
+					(reference "NT2")
 					(unit 1)
 				)
 			)

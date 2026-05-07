@@ -246,4 +246,16 @@ K
 F http://www.ti.com/lit/gpn/tpd1e05u06-q1
 $ENDCMP
 #
+$CMP MPQ3362GJ-AEC1-P
+D LED Lighting Drivers Single String, 3V Vin-min, 36V Vout Boost LED Driver
+K
+F https://www.monolithicpower.com/en/documentview/productdocument/index/version/2/document_type/Datasheet/lang/en/sku/MPQ3362GJ-AEC1/document_id/9116/
+$ENDCMP
+#
+$CMP 7767
+D 4 Pin Screw Terminal, Power Tap M4 Through Hole
+K
+F https://www.keyelco.com/userAssets/file/M65p69.pdf
+$ENDCMP
+#
 #End Doc Library
