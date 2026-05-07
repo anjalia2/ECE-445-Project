@@ -342,7 +342,7 @@ Alongside this, we hooked up our new temperature sensor to our PCB board and it 
 ![Image description](images/waterPump30.png)
 
 
-_**Figure 13: The portion of the water pump code for our demo where the water pump will not turn on for the first 30 seconds*_
+_**Figure 13: The portion of the water pump code for our demo where the water pump will not turn on for the first 30 seconds**_
 
 
 ## April 14th, 2026:
