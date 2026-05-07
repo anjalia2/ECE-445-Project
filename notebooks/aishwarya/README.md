@@ -47,13 +47,13 @@ Our team met up to continue discussing our Aquaponics project idea. The core ide
 water pump from scratch and also building the fish feeder, so we knew that we had to make some changes to ensure that we would be able to build a working simple version of this project for the timeline of this class. We ultimately decided on having a fish feeder subsystem with a simple servo motor used to rotate a fish feeder cylinder with an
 opening. I'm thinking we can time this to feed the fish once every 24 hours. We also decided on a lighting subsystem for the plants, where we'll run a light cycle to promote plant growth. Then, I hunted for various sensors we could use for our water quality subsytem. I ended up finding water-safe temperature sensor, pH sensor, and water flow meter. We also decided on a power subsystem and a water pump subsystem. I found the water pump but we found that we will need to be able to adjust the speed of the water pump, so we continued to search for a pump with wiring so that we can actually control the circuit. I have attached images of the various sensors below. 
 
-![Image description](/images/temperature)
+![Image description](/images/temperature.png)
 _**Figure 1: The water-safe temperature sensor we will use**_
 
-![Image description](/images/ph)
+![Image description](/images/ph.png)
 _**Figure 2: The pH sensor we will use**_
 
-![Image description](/images/flow)
+![Image description](/images/flow.png)
 _**Figure 3: The flow meter we will use**_
 
 Sources:
@@ -85,11 +85,11 @@ We also met with the machine shop to discuss what our physical project apparatus
 
 We created an initial block diagram for our project today. We planned out how all the sensors would connect with the fault LEDs and how control would flow in our project. The core idea is that all the sensors send data back to the microcontroller so that we can send out signals to light up or turn off the fault LEDs accordingly. The signal taken in from the flow sensor will also be used to send out a PWM signal to the water pump so that its speed can be adjusted as needed. I have attached an image of this initial block diagram below, as well as our model of what we want the project to look like.
 
-![Image description](/images/initialBlock)
+![Image description](/images/initialBlock.png)
 _**Figure 4: Our initial block diagram**_
 
 
-![Image description](/images/initialDesign)
+![Image description](/images/initialDesign.png)
 _**Figure 5: The initial design of our project idea**_
 
 We had our first meeting with our TA after we worked on our block diagram, her name is Manvi Jha. We talked to her about our project plans and showed her our block diagram for our project, as well as how our proposal was coming along. She said everything looked good so we are continuing to finish up our proposal which we will submit before the deadline later this week. 
@@ -149,7 +149,7 @@ Today, we presented our design ideas to Professor Kim in our Design Review. This
 Today, we worked on the fishfeeder subsystem of our breadboard demo. First, Anjali and I began writing the code for the fish feeder. Since the fish feeder would just use a servo motor, this was quite simple. I had previously written embedded servo motor code in my robotics team freshman year of college, so I knew that we could just make the feeder rotate 180 degrees to dispense food from its shaft, and then halt the motor for a few milliseconds so that food can come out, and then rotate the fish feeder back. We verified that this code would work by referencing the arduiono library for servo motor control. After that, Estela came by and set up the circuit schematic on our breadboard for the fish feeder subsystem using various in-hole versions of our surface mount components. I have attached an image of this circuit below. We debugged the code and were able to get the fish feeder working.
 
 
-![Image description](/images/servoSchematic)
+![Image description](/images/servoSchematic.png)
 _**Figure 7: The schematic for the fish feeder subsystem that we replicated on a breadboard**_
 
 Sources:
@@ -175,7 +175,7 @@ After that, we need to calculate the pH associated with the specific voltage we 
 However, we were running into issues as when the servo motor would run, the pH sensor would stop working. We realized that the issue had to be that electrical noise was causing issues for our pH sensor. Since all of our sensors are on one microcontroller, components are not isolated enough and thus they are getting affected by noise. To fix this, we decided to have the servo motor rotate every 60 seconds, but have the pH sensor every 50ms. Thus, the overlap between the two would be limitted. This timing trick allows us to minimize interference between the two pieces of code. 
 
 
-![Image description](/images/phCode)
+![Image description](/images/phCode.png)
 _**Figure 8: The code for our pH sensor which polls every 30ms**_
 
 After working on the pH sensor code, we began working on the water flow meter code. To do this, we referenced documentation which said that we could use interrupts to trigger the flow rate measurement. Basically, the flow meter would increment the flow rate every time it detected a rising edge of a signal pulse. We used this implementation but as we werer testing with print statements and blowing into the sensor, we realized that the a flow rate would get measured, but that the pH reading would be off and the servo motor would not rotate. I debugged this issue for a while using various print statements, and then I realized the issue was that because we were using interrupts for this sensor, we were running into a race condition where the program would stop the servo motor rotation or pH reading in order to measure the flow rate when we blew into the flow meter (triggering the interrupt) and then that would mess up the timing dependency of the two other sensors as we polled them for specific intervals of time. This was a major moment in the code development of this project.
@@ -185,7 +185,7 @@ I tried to fix this by implementing locking so that we would pass the lock to wh
 We decided we would switch to polling the flow sensor and we made it so that when the if the servo motor was not on and a falling edge was detected in the digital read we would increment a value called NbTopsFan, which counts the amount of pulses we detect in the digital read between the last flow meter reading and the present time. Then, only if it has been 5 seconds since our last flow meter reading, we conver that pulse rate to a liters per hour flow rate and print it out to the serial port. The equation we used for this conversion is based on the original documentation, which is __l_hour = (flow_frequency * 60/7.5)__. Our equation based on our code ended up being __flowRate = (NbTopsFan * 60.0 / 7.5)__. We basically scale up the pulse rate to what it would be in a minute and then divide by the calibration factor of the sensor which is 7.5. When we tested this out, our flow meter was able to output a reading when we blew into it and did not cause issues with out pH output or servo motor rotation. 
 
 
-![Image description](/images/flowCode)
+![Image description](/images/flowCode.png)
 _**Figure 9: The code for our flow meter sensor**_
 
 Finally, we tried to write the code for our temperature sensor to complete the water quality subsystem, but this was a problem because no matter how we hooked the sensor up to our circuit, it was indicating that it was not working. We followed the setup specified in the documentation for the temperature sensor and its datasheet, which involved using the OneWire and DallasTemperature libraries. Since the sensor uses the 1-Wire Protocol, it only needs a single data wire to communicate with our ESP32. OneWire basically handles this protocol and abstracts it out so we do not have to directly implement it, and DallasTemperature makes it so that the temperature can just be requested and read easily without complicated math like the pH sensor had. Thanks to these libraries, we just had to call the getTempCByIndex() built in function to find the current temperature reading. However, since the sensor was printing that it had "no connection" we tried to debug the circuit but found that there were no issues with it. We decided that the temperature sensor itself was probably broken and thus ordered a new one.
@@ -250,7 +250,7 @@ Finally, I decided to add the fault LED code in with digitalWrites of HIGH signa
 
 I have attached an image of my grow LED code below.
 
-![Image description](/images/ledDriverCode)
+![Image description](/images/ledDriverCode.png)
 _**Figure 10: The code for our grow LEDs and LED driver**_
 
 Sources:
@@ -273,11 +273,11 @@ While testing out the Fault LEDs, I saw that none of the LEDs were lighting up d
 Today, I worked on 3D printing our fish feeder. I had the basic CAD estela created, but I needed to get measurements based on our servo motor size. Using Estela's caliper, I took measurements of the shaft the servo motor (and thus the fish feeder) would connect to and adjusted the CAD model accordingly. I then 3D printed it (it was only a 23-minute print). The physical model had no way of going onto the servo motor, as it was just a cylinder with holes for food. I knew to fix this I had to design a lid system. I spent the day creating a new CAD model which would have a press-fit lid that would attach to the servo motor shaft, so that the cannister could be removed and reattached (to fill with food). I 3D printed this out and it was a good final design for our project. I have attached an image of the old and new designs below.
 
 
-![Image description](/images/oldFishFeeder)
+![Image description](/images/oldFishFeeder.png)
 _**Figure 11: The old fish feeder CAD model**_
 
 
-![Image description](/images/newFishFeeder)
+![Image description](/images/newFishFeeder.png)
 _**Figure 12: My new fish feeder cad model with a press-fit lid**_
 
 ## April 6th, 2026:
@@ -306,7 +306,7 @@ Today we took a look at the PCB again to figure out why it was smoking when I te
 Alongside this, we hooked up our new temperature sensor to our PCB board and it worked with no issues, indicating the issue was not our code but rather that our first sensor was faulty.
 
 
-![Image description](/images/waterPump30)
+![Image description](/images/waterPump30.png)
 _**Figure 13: The portion of the water pump code for our demo where the water pump will not turn on for the first 30 seconds*_
 
 
@@ -318,7 +318,7 @@ Today was an eventful day in terms of our project. Since we had everything worki
 
 
 
-![Image description](/images/apparatus)
+![Image description](/images/apparatus.png)
 _**Figure 14: Our full apparatus**_
 
 However, an issue we ran into is that while we were testing our code, the USB programmer was plugged in incorrectly as 3 volts was connected to the ground pin, thus this shorted out that connector part of our board. We removed the chip associated with the USB programmer from our board and had to replace our microcontroller as well as it got damaged from the heat of the resoldering in that area of the board. Luckily, we had an extra microcontroller or this would have been very bad. We tested all of our code again and were glad to see that all of it worked correctly. We began prepping for our mock demo and mock presentation. 
@@ -354,7 +354,7 @@ Today, Anjali and I worked on final setup for our final demo. We began testing e
 Estela joined us and we worked on completing these. We took video clips of using the multimeter on various parts of the PCB board to confirm that the components on the board were receiving the required voltage amounts, thus verifying our requirements for our power subsystem. With all of our requirements met, we worked on creating the verifications and requirements table to print out and give to our professor and peer reviewers during our final demo tomorrow. 
 
 
-![Image description](/images/powerVerification)
+![Image description](/images/powerVerification.png)
 _**Figure 15: Table of the power subsystem verifications**_
 
 ## April 28th, 2026:
